@@ -1,9 +1,10 @@
-import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google' // CSS Fix Trigger
+
 import Script from 'next/script'
 import './globals.css'
 import ClientLayout from '@/components/layout/ClientLayout'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
