@@ -27,14 +27,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app/' : 'http://localhost:3000',
+    url: process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com/' : 'http://localhost:3000',
     siteName: 'Handy Helper Tools',
     title: 'Handy Helper Tools - Free Online Calculators & Utility Tools',
     description: 'Free online calculators and utility tools for everyday use. Fast, accurate, and free.',
@@ -117,7 +117,7 @@ export default function RootLayout({ children }) {
     "@type": "WebApplication",
     "name": "Handy Helper Tools",
     "description": "Free online calculators and utility tools for everyday use. BMI calculator, EMI calculator, age calculator, and 30+ more tools.",
-    "url": process.env.NODE_ENV === 'production' ? "https://handy-helper.vercel.app" : "http://localhost:3000",
+    "url": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com" : "http://localhost:3000",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -144,7 +144,7 @@ export default function RootLayout({ children }) {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": process.env.NODE_ENV === 'production' ? "https://handy-helper.vercel.app/?search={search_term_string}" : "http://localhost:3000/?search={search_term_string}"
+        "urlTemplate": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com/?search={search_term_string}" : "http://localhost:3000/?search={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -154,8 +154,8 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Handy Helper Tools",
-    "url": process.env.NODE_ENV === 'production' ? "https://handy-helper.vercel.app" : "http://localhost:3000",
-    "logo": process.env.NODE_ENV === 'production' ? "https://handy-helper.vercel.app/logo.png" : "http://localhost:3000/logo.png",
+    "url": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com" : "http://localhost:3000",
+    "logo": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com/logo.png" : "http://localhost:3000/logo.png",
     "description": "Free online calculators and utility tools",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -172,14 +172,13 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Handy Helper Tools",
-    "url": process.env.NODE_ENV === 'production' ? "https://handy-helper.vercel.app" : "http://localhost:3000",
+    "url": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com" : "http://localhost:3000",
     "description": "Free online calculators and utility tools",
     "publisher": {
       "@type": "Organization",
       "name": "Handy Helper Tools"
     }
   }
-
   return (
     <html lang="en">
       <body className={inter.className}>
