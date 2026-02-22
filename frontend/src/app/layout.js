@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google' // CSS Fix Trigger
 import Script from 'next/script'
 import './globals.css'
 import ClientLayout from '@/components/layout/ClientLayout'
+import AdSense from '@/components/ads/AdSense'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -207,6 +208,8 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
         />
+        {/* AdSense Auto Ads - Automatically blocks on low-content pages */}
+        <AdSense enableAutoAds={true} />
         <ClientLayout>
           {children}
         </ClientLayout>
