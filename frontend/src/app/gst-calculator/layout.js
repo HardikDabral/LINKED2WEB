@@ -2,7 +2,7 @@ export const metadata = {
   title: 'GST Calculator - Calculate GST Amount & Price | Handy Helper',
   description: 'Calculate GST (Goods and Services Tax) amounts and total prices. Free GST calculator for different tax rates with accurate calculations. GST calculator, GST tool, tax calculator, GST amount, GST price, tax calculator, GST rate, goods and services tax.',
   keywords: 'GST calculator, GST tool, tax calculator, GST amount, GST price, tax calculator, GST rate, goods and services tax',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/gst-calculator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function GSTLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

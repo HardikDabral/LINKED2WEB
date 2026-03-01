@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Color Picker - Free Color Picker Tool | Handy Helper',
   description: 'Pick colors and convert between HEX, RGB, HSL formats. Free online color picker tool with color codes and palette generator. Color picker, color tool, HEX color, RGB color, HSL color, color converter, color palette, color codes.',
   keywords: 'color picker, color tool, HEX color, RGB color, HSL color, color converter, color palette, color codes',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/color-picker',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function ColorLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

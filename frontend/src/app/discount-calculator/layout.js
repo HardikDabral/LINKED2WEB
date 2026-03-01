@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Discount Calculator - Calculate Discounts & Savings | Handy Helper',
   description: 'Calculate discounts, sale prices, and savings instantly. Free discount calculator for percentage off, final price, and amount saved. Discount calculator, sale calculator, percentage off, discount price, savings calculator, price calculator, discount tool, sale price.',
   keywords: 'discount calculator, sale calculator, percentage off, discount price, savings calculator, price calculator, discount tool, sale price',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/discount-calculator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function DiscountLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

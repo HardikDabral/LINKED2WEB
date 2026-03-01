@@ -2,7 +2,7 @@ export const metadata = {
   title: 'EMI Calculator - Free Loan EMI Calculator | Handy Helper',
   description: 'Calculate your loan EMI (Equated Monthly Installment) for home loans, car loans, and personal loans. Free EMI calculator with interest rate, loan amount, and tenure calculations. EMI calculator, loan EMI, home loan calculator, car loan EMI, personal loan calculator, loan calculator, monthly EMI, free EMI calculator.',
   keywords: 'EMI calculator, loan EMI, home loan calculator, car loan EMI, personal loan calculator, EMI calculation, loan calculator, monthly EMI, free EMI calculator, loan interest calculator',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/emi-calculator',
   },
@@ -31,7 +31,7 @@ export const metadata = {
 }
 
 export default function EMILayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

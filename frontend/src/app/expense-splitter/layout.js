@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Expense Splitter - Split Bills & Expenses | Handy Helper',
   description: 'Split bills and expenses among friends easily. Free expense splitter calculator for restaurants, trips, and shared costs. Expense splitter, bill splitter, split bills, expense calculator, bill calculator, cost splitter, shared expenses, split cost.',
   keywords: 'expense splitter, bill splitter, split bills, expense calculator, bill calculator, cost splitter, shared expenses, split cost',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/expense-splitter',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function ExpenseLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

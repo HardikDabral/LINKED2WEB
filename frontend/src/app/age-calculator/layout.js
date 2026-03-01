@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Age Calculator - Calculate Your Exact Age | Handy Helper',
   description: 'Calculate your exact age in years, months, days, hours, and minutes. Free age calculator from date of birth. Find your age in different units instantly. Age calculator, calculate age, date of birth calculator, age in days, age in months, how old am I, birthday calculator, age finder, free age calculator.',
   keywords: 'age calculator, calculate age, date of birth calculator, age in days, age in months, how old am I, birthday calculator, age finder, free age calculator',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/age-calculator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function AgeLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Calorie Calculator - Daily Calorie Needs Calculator | Handy Helper',
   description: 'Calculate your daily calorie needs based on age, gender, weight, height, and activity level. Free calorie calculator for weight loss, maintenance, or gain. Calorie calculator, daily calories, calorie needs, BMR calculator, TDEE calculator, calorie intake, weight loss calculator, calorie counter.',
   keywords: 'calorie calculator, daily calories, calorie needs, BMR calculator, TDEE calculator, calorie intake, weight loss calculator, calorie counter',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/calorie-calculator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function CalorieLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

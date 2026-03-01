@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Terms and Conditions - Handy Helper Tools',
   description: 'Read our Terms and Conditions for using Handy Helper Tools. Learn about user rights, responsibilities, and service terms for our free online calculators and utility tools.',
   keywords: 'terms and conditions, terms of service, user agreement, legal terms, service terms, website terms',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/terms',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function TermsLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const breadcrumbData = {
     "@context": "https://schema.org",

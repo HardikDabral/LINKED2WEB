@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Privacy Policy - Handy Helper Tools',
   description: 'Read our Privacy Policy to understand how Handy Helper Tools collects, uses, and protects your personal information when using our free online calculators and utility tools.',
   keywords: 'privacy policy, data protection, privacy, user privacy, data collection, personal information, GDPR, privacy rights',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/privacy',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function PrivacyLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const breadcrumbData = {
     "@context": "https://schema.org",

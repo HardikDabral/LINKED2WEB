@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Base64 Encoder/Decoder - Free Base64 Tool | Handy Helper',
   description: 'Encode and decode Base64 strings for free. Convert text to Base64 and Base64 to text instantly. Free online Base64 encoder and decoder tool. Base64 encoder, base64 decoder, base64 converter, base64 tool, encode base64, decode base64, base64 online, base64 string.',
   keywords: 'base64 encoder, base64 decoder, base64 converter, base64 tool, encode base64, decode base64, base64 online, base64 string',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/base64-tool',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function Base64Layout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

@@ -2,7 +2,7 @@ export const metadata = {
   title: 'QR Code Generator - Free QR Code Maker | Handy Helper',
   description: 'Generate QR codes for free. Create QR codes for URLs, text, contact info, and more. Customizable QR code generator with instant download. QR code generator, QR code maker, free QR code, QR code creator, generate QR code, QR code online, QR code tool, QR code scanner.',
   keywords: 'QR code generator, QR code maker, free QR code, QR code creator, generate QR code, QR code online, QR code tool, QR code scanner',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/qr-generator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function QRLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

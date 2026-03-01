@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Day Counter - Calculate Days Between Dates | Handy Helper',
   description: 'Count the exact number of days between any two dates. Free day counter calculator for dates, events, and deadlines. Day counter, days between dates, date calculator, day calculator, count days, date difference, days calculator, calendar calculator.',
   keywords: 'day counter, days between dates, date calculator, day calculator, count days, date difference, days calculator, calendar calculator',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/day-counter',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function DayCounterLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

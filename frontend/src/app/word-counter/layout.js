@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Word Counter - Count Words & Characters | Handy Helper',
   description: 'Count words, characters, sentences, and paragraphs in your text. Free word counter tool with detailed statistics. Word counter, character counter, word count, text counter, word tool, character count, word analyzer, text analyzer.',
   keywords: 'word counter, character counter, word count, text counter, word tool, character count, word analyzer, text analyzer',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/word-counter',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function WordCounterLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

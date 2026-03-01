@@ -88,11 +88,11 @@ export function hasSufficientContent(container = null, minWords = 300) {
 
 /**
  * Get AdSense configuration
- * Replace with your actual AdSense publisher ID
+ * Your AdSense publisher ID
  */
 export const ADSENSE_CONFIG = {
-  // Replace 'ca-pub-XXXXXXXXXX' with your actual AdSense publisher ID
-  publisherId: process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID || 'ca-pub-XXXXXXXXXX',
+  // Your AdSense publisher ID
+  publisherId: process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID || 'ca-pub-8195324447971925',
   // Enable auto ads (set to false if you want manual ad placement)
   enableAutoAds: true,
 }

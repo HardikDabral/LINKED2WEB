@@ -2,7 +2,7 @@ export const metadata = {
   title: 'GPA Calculator - Grade Point Average Calculator | Handy Helper',
   description: 'Calculate your GPA (Grade Point Average) easily. Free GPA calculator for students with weighted and unweighted GPA calculations. GPA calculator, grade point average, GPA tool, GPA converter, calculate GPA, student GPA, academic calculator, grade calculator.',
   keywords: 'GPA calculator, grade point average, GPA tool, GPA converter, calculate GPA, student GPA, academic calculator, grade calculator',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/gpa-calculator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function GPALayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

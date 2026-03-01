@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Percentage Calculator - Calculate Percentages | Handy Helper',
   description: 'Calculate percentages, find percentage of numbers, and percentage change. Free percentage calculator with multiple calculation modes. Percentage calculator, percent calculator, calculate percentage, percentage tool, percent tool, percentage finder, percent converter.',
   keywords: 'percentage calculator, percent calculator, calculate percentage, percentage tool, percent tool, percentage finder, percent converter',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/percentage-calculator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function PercentageLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

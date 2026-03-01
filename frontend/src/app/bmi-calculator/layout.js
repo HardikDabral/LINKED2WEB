@@ -2,7 +2,7 @@ export const metadata = {
   title: 'BMI Calculator - Free Body Mass Index Calculator | Handy Helper',
   description: 'Calculate your Body Mass Index (BMI) for free. Supports metric and imperial units. Get instant BMI results, weight category, and healthy weight range recommendations. BMI calculator, body mass index, BMI tool, health calculator, weight calculator, BMI metric, BMI imperial, free BMI calculator, BMI chart, healthy weight.',
   keywords: 'BMI calculator, body mass index, BMI tool, health calculator, weight calculator, BMI metric, BMI imperial, free BMI calculator, BMI chart, healthy weight',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/bmi-calculator',
   },
@@ -31,7 +31,7 @@ export const metadata = {
 }
 
 export default function BMILayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

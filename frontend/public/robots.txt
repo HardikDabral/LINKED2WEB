@@ -23,5 +23,5 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://handy-helper.vercel.app/sitemap.xml
+Sitemap: https://www.fruupy.com/sitemap.xml
 

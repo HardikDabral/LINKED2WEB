@@ -246,7 +246,7 @@ export default function Home() {
               "@type": "ListItem",
               "position": index + 1,
               "name": tool.name,
-              "url": `https://handy-helper.vercel.app/${tool.id}`
+              "url": `https://www.fruupy.com/${tool.id}`
             }))
           })
         }}

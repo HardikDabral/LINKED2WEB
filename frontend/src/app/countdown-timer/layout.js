@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Countdown Timer - Free Online Countdown | Handy Helper',
   description: 'Create countdown timers for events, deadlines, and special moments. Free online countdown timer with customizable alerts and notifications. Countdown timer, timer, countdown, event timer, deadline timer, countdown clock, online timer, free timer.',
   keywords: 'countdown timer, timer, countdown, event timer, deadline timer, countdown clock, online timer, free timer',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/countdown-timer',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function CountdownLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",

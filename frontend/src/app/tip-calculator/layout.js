@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Tip Calculator - Calculate Tips & Gratuity | Handy Helper',
   description: 'Calculate tips for services easily. Free tip calculator with percentage options and split bill functionality. Tip calculator, gratuity calculator, restaurant tip calculator, service tip tool.',
   keywords: 'tip calculator, gratuity calculator, tip tool, calculate tip, restaurant tip, service tip, tip percentage, tip splitter, free tip calculator, gratuity tool',
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/tip-calculator',
   },
@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 export default function TipLayout({ children }) {
-  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://handy-helper.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'
   
   const structuredData = {
     "@context": "https://schema.org",
