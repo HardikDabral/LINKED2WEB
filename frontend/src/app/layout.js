@@ -18,10 +18,10 @@ export const metadata = {
     default: 'Fruupy - Free Online Calculators & Utility Tools',
     template: '%s | Fruupy'
   },
-  description: 'Fruupy provides accurate free online calculators for BMI, EMI, age, percentage and more. Solve everyday tasks with our reliable, fast, and 100% free utility tools. No login required.',
-  keywords: 'fruupy, free online calculators, BMI calculator, EMI calculator, age calculator, percentage calculator, utility tools, web calculator, math tools, financial calculator, unit converter, online tools, free calculator',
-  authors: [{ name: 'Fruupy Team' }],
-  creator: 'Fruupy',
+  description: 'Fruupy provides accurate free online calculators for BMI, EMI, age, percentage and 100+ other utility tools. Explore with Ramesh our collection of reliable, fast, and free web tools designed for students and professionals.',
+  keywords: 'fruupy, explore with ramesh, free online calculators, BMI calculator, EMI calculator, age calculator, percentage calculator, utility tools, web calculator, math tools, financial calculator, unit converter, online tools, free calculator, digital marketing tools, SEO tools',
+  authors: [{ name: 'Ramesh Chandra' }, { name: 'Explore with Ramesh' }],
+  creator: 'Explore with Ramesh',
   publisher: 'Fruupy',
   formatDetection: {
     email: false,

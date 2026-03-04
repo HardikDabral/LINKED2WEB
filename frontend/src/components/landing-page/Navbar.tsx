@@ -12,6 +12,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/", label: "Tools" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ];
 
