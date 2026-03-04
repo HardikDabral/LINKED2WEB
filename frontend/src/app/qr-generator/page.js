@@ -12,7 +12,7 @@ export default function QRGenerator() {
 
   const generateQR = async () => {
     if (!text) return
-    
+
     setIsGenerating(true)
     try {
       const url = await QRCode.toDataURL(text, {
@@ -47,7 +47,7 @@ export default function QRGenerator() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <QrCode className="w-6 h-6" />
@@ -75,11 +75,10 @@ export default function QRGenerator() {
             <button
               onClick={generateQR}
               disabled={!text || isGenerating}
-              className={`w-full py-3 px-4 rounded-lg font-medium flex items-center justify-center gap-2 ${
-                !text || isGenerating
+              className={`w-full py-3 px-4 rounded-lg font-medium flex items-center justify-center gap-2 ${!text || isGenerating
                   ? 'bg-[#4F7C82] cursor-not-allowed'
                   : 'bg-[#0B2E33] hover:bg-[#4F7C82] text-white'
-              }`}
+                }`}
             >
               {isGenerating ? (
                 <>
@@ -132,6 +131,22 @@ export default function QRGenerator() {
                 <li>Use in well-lit conditions for scanning</li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* About QR Generator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40 mb-6">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the QR Code Generator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              A QR (Quick Response) code is a type of matrix barcode that contains information about the item to which it is attached. They are widely used for digital marketing, product tracking, and providing quick access to website URLs and contact information.
+            </p>
+            <p>
+              Our free online QR code generator allows you to create high-quality, scannable QR codes in seconds. Whether you're linking to a personal portfolio, a social media profile, or a business promotion, this tool ensures your data is encoded accurately. It supports any text-based input, including long URLs, plain text messages, and contact details.
+            </p>
+            <p>
+              Simply enter your content in the text area above and click "Generate QR Code." You can then preview your customized code and download it as a high-resolution image file for use in print or digital media. Our generator is 100% free, requires no account, and provides unlimited generations.
+            </p>
           </div>
         </div>
 

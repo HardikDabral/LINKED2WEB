@@ -1,24 +1,24 @@
 export const metadata = {
-  title: 'Terms and Conditions - Handy Helper Tools',
-  description: 'Read our Terms and Conditions for using Handy Helper Tools. Learn about user rights, responsibilities, and service terms for our free online calculators and utility tools.',
-  keywords: 'terms and conditions, terms of service, user agreement, legal terms, service terms, website terms',
+  title: 'Terms and Conditions - Fruupy',
+  description: 'Read our Terms and Conditions for using Fruupy. Learn about user rights, responsibilities, and service terms for our free online calculators and utility tools.',
+  keywords: 'fruupy, terms and conditions, terms of service, user agreement, legal terms, service terms, website terms',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/terms',
   },
   openGraph: {
-    title: 'Terms and Conditions - Handy Helper Tools',
-    description: 'Read our Terms and Conditions for using Handy Helper Tools. Learn about user rights, responsibilities, and service terms.',
+    title: 'Terms and Conditions - Fruupy',
+    description: 'Read our Terms and Conditions for using Fruupy. Learn about user rights, responsibilities, and service terms.',
     url: '/terms',
-    siteName: 'Handy Helper Tools',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Terms and Conditions - Handy Helper Tools' }],
+    siteName: 'Fruupy',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Terms and Conditions - Fruupy' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Terms and Conditions - Handy Helper Tools',
-    description: 'Read our Terms and Conditions for using Handy Helper Tools.',
+    title: 'Terms and Conditions - Fruupy',
+    description: 'Read our Terms and Conditions for using Fruupy.',
     images: ['/og-image.jpg'],
   },
 }

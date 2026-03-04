@@ -46,7 +46,7 @@ export default function AuthPage() {
       <div className="max-w-2xl mx-auto p-6 pt-16 lg:ml-[-20px]">
         <div className="bg-white/50 backdrop-blur-xl rounded-xl p-8 shadow-md border border-[#93B1B5]/40">
           <h1 className="text-3xl font-bold text-[#0B2E33] mb-6 text-center">
-            {isLogin ? 'Login to Handy Helper Tools' : 'Sign Up for Handy Helper Tools'}
+            {isLogin ? 'Login to Fruupy' : 'Sign Up for Fruupy'}
           </h1>
           <div className="flex gap-2 mb-6">
             <button

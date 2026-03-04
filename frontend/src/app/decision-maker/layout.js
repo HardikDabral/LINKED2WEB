@@ -1,23 +1,23 @@
 export const metadata = {
-  title: 'Decision Maker - Random Choice Picker | Handy Helper',
+  title: 'Decision Maker - Random Choice Picker | Fruupy',
   description: 'Make decisions easily with our random choice picker. Flip a coin, pick random options, or use our decision maker tool for quick choices. Decision maker, random picker, coin flip, random choice, decision tool, random selector, choice picker, decision helper.',
-  keywords: 'decision maker, random picker, coin flip, random choice, decision tool, random selector, choice picker, decision helper',
+  keywords: 'fruupy, decision maker, random picker, coin flip, random choice, decision tool, random selector, choice picker, decision helper',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/decision-maker',
   },
   openGraph: {
-    title: 'Decision Maker - Random Choice Picker | Handy Helper',
+    title: 'Decision Maker - Random Choice Picker | Fruupy',
     description: 'Make decisions easily with our random choice picker. Flip a coin, pick random options, or use our decision maker tool.',
     url: '/decision-maker',
-    siteName: 'Handy Helper Tools',
+    siteName: 'Fruupy',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Decision Maker' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Decision Maker - Random Choice Picker | Handy Helper',
+    title: 'Decision Maker - Random Choice Picker | Fruupy',
     description: 'Make decisions easily with our random choice picker. Flip a coin, pick random options.',
     images: ['/og-image.jpg'],
   },

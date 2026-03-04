@@ -1,4 +1,4 @@
-# robots.txt for Handy Helper Tools
+# robots.txt for Fruupy
 # Allow all search engines to crawl the site
 
 User-agent: *

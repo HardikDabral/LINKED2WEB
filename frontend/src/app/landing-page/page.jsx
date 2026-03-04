@@ -8,9 +8,10 @@ import Faq from '@/components/landing-page/Faq'
 import Navbar from '@/components/landing-page/Navbar'
 
 export const metadata = {
-  title: 'Free Online Calculators & Tools - Handy Helper',
-  description: 'Discover powerful free calculators and tools: BMI calculator, EMI calculator, age calculator, percentage calculator, QR generator, language translator, and 30+ more utility tools. Fast, accurate, and completely free.',
+  title: 'Free Online Calculators & Tools - Fruupy',
+  description: 'Fruupy offers a premium selection of 30+ free online calculators including BMI, EMI, age, and percentage tools. Solve daily tasks instantly with our fast, accurate, and reliable utility tools. No registration required.',
   keywords: [
+    'fruupy',
     'free online calculators',
     'BMI calculator',
     'EMI calculator',
@@ -23,12 +24,12 @@ export const metadata = {
     'utility tools',
     'online tools',
     'free calculators',
-    'handy helper tools',
+    'Fruupy tools',
     'calculator tools',
     'productivity tools'
   ],
   openGraph: {
-    title: 'Free Online Calculators & Tools - Handy Helper',
+    title: 'Free Online Calculators & Tools - Fruupy',
     description: 'Discover powerful free calculators and tools: BMI calculator, EMI calculator, age calculator, and 30+ more utility tools.',
     type: 'website',
   },

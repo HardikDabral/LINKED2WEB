@@ -37,7 +37,7 @@ export default function GSTCalculator() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <Receipt className="w-6 h-6" />
@@ -82,21 +82,19 @@ export default function GSTCalculator() {
               <div className="flex space-x-4">
                 <button
                   onClick={() => setCalculationType('exclusive')}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${
-                    calculationType === 'exclusive'
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${calculationType === 'exclusive'
                       ? 'bg-[#0B2E33] text-white border-[#0B2E33]'
                       : 'bg-white/50 border-[#93B1B5]/40 text-[#0B2E33]'
-                  }`}
+                    }`}
                 >
                   Exclusive GST
                 </button>
                 <button
                   onClick={() => setCalculationType('inclusive')}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${
-                    calculationType === 'inclusive'
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${calculationType === 'inclusive'
                       ? 'bg-[#0B2E33] text-white border-[#0B2E33]'
                       : 'bg-white/50 border-[#93B1B5]/40 text-[#0B2E33]'
-                  }`}
+                    }`}
                 >
                   Inclusive GST
                 </button>
@@ -164,6 +162,22 @@ export default function GSTCalculator() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* About GST Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the GST Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Goods and Services Tax (GST) is an indirect tax used in many countries, including India, to replace several other indirect taxes such as VAT, Service Tax, and Excise Duty. Calculating GST accurately is essential for business owners, consumers, and professionals alike.
+            </p>
+            <p>
+              Our free online GST calculator simplifies this process by offering two primary modes: GST Inclusive and GST Exclusive. If you have the base price of a product, our tool will calculate the exact tax amount to be added. Conversely, if you have the final price, it can extract the base price and the tax component for you.
+            </p>
+            <p>
+              This tool supports all standard GST slabs (5%, 12%, 18%, and 28%). Whether you're calculating taxes for a small retail purchase or large-scale business transactions, our GST calculator provides fast and pinpoint accurate results. Just enter the amount, select the tax rate, and choose your calculation type.
+            </p>
           </div>
         </div>
 

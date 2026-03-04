@@ -1,7 +1,7 @@
 {
-  "name": "Handy Helper Tools",
-  "short_name": "Handy Helper",
-  "description": "Free online calculators and utility tools for everyday use.",
+  "name": "Fruupy",
+  "short_name": "Fruupy",
+  "description": "Fruupy - Free online calculators and utility tools for everyday use.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

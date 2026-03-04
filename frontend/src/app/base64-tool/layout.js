@@ -1,23 +1,23 @@
 export const metadata = {
-  title: 'Base64 Encoder/Decoder - Free Base64 Tool | Handy Helper',
+  title: 'Base64 Encoder/Decoder - Free Base64 Tool | Fruupy',
   description: 'Encode and decode Base64 strings for free. Convert text to Base64 and Base64 to text instantly. Free online Base64 encoder and decoder tool. Base64 encoder, base64 decoder, base64 converter, base64 tool, encode base64, decode base64, base64 online, base64 string.',
-  keywords: 'base64 encoder, base64 decoder, base64 converter, base64 tool, encode base64, decode base64, base64 online, base64 string',
+  keywords: 'fruupy, base64 encoder, base64 decoder, base64 converter, base64 tool, encode base64, decode base64, base64 online, base64 string',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/base64-tool',
   },
   openGraph: {
-    title: 'Base64 Encoder/Decoder - Free Base64 Tool | Handy Helper',
+    title: 'Base64 Encoder/Decoder - Free Base64 Tool | Fruupy',
     description: 'Encode and decode Base64 strings for free. Convert text to Base64 and Base64 to text instantly.',
     url: '/base64-tool',
-    siteName: 'Handy Helper Tools',
+    siteName: 'Fruupy',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Base64 Tool' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Base64 Encoder/Decoder - Free Base64 Tool | Handy Helper',
+    title: 'Base64 Encoder/Decoder - Free Base64 Tool | Fruupy',
     description: 'Encode and decode Base64 strings for free. Convert text to Base64 and Base64 to text instantly.',
     images: ['/og-image.jpg'],
   },

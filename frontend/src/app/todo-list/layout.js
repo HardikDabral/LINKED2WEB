@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Todo List - Task Management Tool | Handy Helper',
+  title: 'Todo List - Task Management Tool | Fruupy',
   description: 'Create and manage tasks efficiently with our free todo list tool. Organize your daily tasks and boost productivity. Todo list, task manager, to do list, task list, productivity tool, task organizer, todo app, task tracker.',
-  keywords: 'todo list, task manager, to do list, task list, productivity tool, task organizer, todo app, task tracker',
+  keywords: 'fruupy, todo list, task manager, to do list, task list, productivity tool, task organizer, todo app, task tracker',
 }
 
 export default function TodoLayout({ children }) {

@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Pomodoro Timer - Productivity Timer | Handy Helper',
+  title: 'Pomodoro Timer - Productivity Timer | Fruupy',
   description: 'Boost productivity with Pomodoro technique timer. Free Pomodoro timer with work and break sessions for better focus. Pomodoro timer, pomodoro technique, productivity timer, focus timer, work timer, study timer, pomodoro app, time management.',
-  keywords: 'pomodoro timer, pomodoro technique, productivity timer, focus timer, work timer, study timer, pomodoro app, time management',
+  keywords: 'fruupy, pomodoro timer, pomodoro technique, productivity timer, focus timer, work timer, study timer, pomodoro app, time management',
 }
 
 export default function PomodoroLayout({ children }) {

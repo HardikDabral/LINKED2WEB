@@ -25,10 +25,10 @@ export default function JsonFormatter() {
       }
 
       const parsedJSON = JSON.parse(input)
-      const formattedJSON = isMinified 
-        ? JSON.stringify(parsedJSON) 
+      const formattedJSON = isMinified
+        ? JSON.stringify(parsedJSON)
         : JSON.stringify(parsedJSON, null, 2)
-      
+
       setOutput(formattedJSON)
       setError(null)
       setLineCount(formattedJSON.split('\n').length)
@@ -93,7 +93,7 @@ export default function JsonFormatter() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <Braces className="w-6 h-6" />
@@ -212,6 +212,25 @@ export default function JsonFormatter() {
             </ul>
           </div>
         )}
+
+        {/* About JSON Formatter Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40 mb-6">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the JSON Formatter Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              JSON (JavaScript Object Notation) is the most popular data format used for asynchronous browser-server communication. However, raw JSON is often minified and difficult for humans to read. Our JSON Formatter is designed to solve this by "pretty-printing" your data with proper indentation and syntax highlighting.
+            </p>
+            <p>
+              This tool provides a comprehensive suite of JSON utilities:
+              <br />• <strong>Formatting:</strong> Instantly convert scrambled or minified JSON into a clean, readable structure.
+              <br />• <strong>Validation:</strong> Our tool automatically checks for syntax errors, missing commas, or incorrect quotes, providing precise line and column numbers for quick debugging.
+              <br />• <strong>Minification:</strong> If you're looking to reduce file size for production use, our minifier can strip all unnecessary whitespace in a single click.
+            </p>
+            <p>
+              Whether you're a developer debugging an API response or a data analyst exploring a dataset, our free online JSON formatter is the perfect lightweight companion. No data is stored on our servers, ensuring your JSON data remains private and secure in your browser.
+            </p>
+          </div>
+        </div>
 
         {/* Related Tools Section */}
         <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">

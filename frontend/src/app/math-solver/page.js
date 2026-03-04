@@ -14,7 +14,7 @@ export default function MathSolver() {
     try {
       // Clean the equation input
       const cleanedEquation = equation.replace(/\s/g, '')
-      
+
       if (!cleanedEquation) {
         setError('Please enter an equation')
         return
@@ -23,10 +23,10 @@ export default function MathSolver() {
       // Basic arithmetic operations
       if (/^[\d+\-*/.()]+$/.test(cleanedEquation)) {
         const result = eval(cleanedEquation.replace(/x/g, '*'))
-        const solutionObj = { 
-          type: 'arithmetic', 
+        const solutionObj = {
+          type: 'arithmetic',
           equation: cleanedEquation,
-          result: parseFloat(result.toFixed(4)) 
+          result: parseFloat(result.toFixed(4))
         }
         setSolution(solutionObj)
         addToHistory(solutionObj)
@@ -42,11 +42,11 @@ export default function MathSolver() {
         const constant = parseFloat(b)
         const result = parseFloat(c)
         const x = parseFloat(((result - constant) / coefficient).toFixed(4))
-        
-        const solutionObj = { 
-          type: 'linear', 
+
+        const solutionObj = {
+          type: 'linear',
           equation: cleanedEquation,
-          x 
+          x
         }
         setSolution(solutionObj)
         addToHistory(solutionObj)
@@ -61,17 +61,17 @@ export default function MathSolver() {
         const aCoeff = a === '-' ? -1 : a === '' ? 1 : parseFloat(a)
         const bCoeff = bTerm ? parseFloat(bTerm.replace('x', '')) : 0
         const cCoeff = cTerm ? parseFloat(cTerm) : 0
-        
+
         const discriminant = bCoeff * bCoeff - 4 * aCoeff * cCoeff
-        
+
         let solutionObj
         if (discriminant < 0) {
-          const realPart = parseFloat((-bCoeff/(2*aCoeff)).toFixed(4))
-          const imagPart = parseFloat((Math.sqrt(-discriminant)/(2*aCoeff)).toFixed(4))
-          solutionObj = { 
-            type: 'quadratic', 
+          const realPart = parseFloat((-bCoeff / (2 * aCoeff)).toFixed(4))
+          const imagPart = parseFloat((Math.sqrt(-discriminant) / (2 * aCoeff)).toFixed(4))
+          solutionObj = {
+            type: 'quadratic',
             equation: cleanedEquation,
-            x1: `${realPart} + ${imagPart}i`, 
+            x1: `${realPart} + ${imagPart}i`,
             x2: `${realPart} - ${imagPart}i`,
             discriminant: discriminant.toFixed(4),
             nature: 'complex'
@@ -79,16 +79,16 @@ export default function MathSolver() {
         } else {
           const x1 = parseFloat(((-bCoeff + Math.sqrt(discriminant)) / (2 * aCoeff)).toFixed(4))
           const x2 = parseFloat(((-bCoeff - Math.sqrt(discriminant)) / (2 * aCoeff)).toFixed(4))
-          solutionObj = { 
-            type: 'quadratic', 
+          solutionObj = {
+            type: 'quadratic',
             equation: cleanedEquation,
-            x1, 
+            x1,
             x2,
             discriminant: discriminant.toFixed(4),
             nature: discriminant === 0 ? 'real and equal' : 'real and distinct'
           }
         }
-        
+
         setSolution(solutionObj)
         addToHistory(solutionObj)
         setError(null)
@@ -125,7 +125,7 @@ export default function MathSolver() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <Binary className="w-6 h-6" />
@@ -144,14 +144,14 @@ export default function MathSolver() {
                   Enter Equation
                 </label>
                 <div className="flex gap-2">
-                  <button 
+                  <button
                     onClick={() => setShowHistory(!showHistory)}
                     className="text-xs p-1.5 bg-[#0B2E33]/10 hover:bg-[#0B2E33]/20 rounded flex items-center gap-1"
                   >
                     <History className="w-3 h-3" />
                     {showHistory ? 'Hide' : 'Show'} History
                   </button>
-                  <button 
+                  <button
                     onClick={clearAll}
                     className="text-xs p-1.5 bg-[#0B2E33]/10 hover:bg-[#0B2E33]/20 rounded flex items-center gap-1"
                   >
@@ -160,12 +160,12 @@ export default function MathSolver() {
                   </button>
                 </div>
               </div>
-              
+
               {showHistory && history.length > 0 && (
                 <div className="mb-3 bg-[#B8E3E9]/20 p-3 rounded-lg border border-[#93B1B5]/30 max-h-40 overflow-y-auto">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-xs font-medium text-[#0B2E33]/70">Recent Solutions</span>
-                    <button 
+                    <button
                       onClick={clearHistory}
                       className="text-xs text-[#0B2E33]/50 hover:text-[#0B2E33]"
                     >
@@ -174,8 +174,8 @@ export default function MathSolver() {
                   </div>
                   <div className="space-y-2">
                     {history.map((item, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         onClick={() => loadFromHistory(item)}
                         className="text-xs p-2 bg-white/30 hover:bg-white/50 rounded cursor-pointer"
                       >
@@ -190,7 +190,7 @@ export default function MathSolver() {
                   </div>
                 </div>
               )}
-              
+
               <input
                 type="text"
                 value={equation}
@@ -236,13 +236,13 @@ export default function MathSolver() {
                 <h3 className="text-lg font-semibold text-[#0B2E33] mb-2">
                   Solution for: <span className="font-mono">{solution.equation}</span>
                 </h3>
-                
+
                 {solution.type === 'arithmetic' && (
                   <div className="text-[#0B2E33] font-mono">
                     = {solution.result}
                   </div>
                 )}
-                
+
                 {solution.type === 'linear' && (
                   <div className="text-[#0B2E33] space-y-1">
                     <div className="font-mono">x = {solution.x}</div>
@@ -251,7 +251,7 @@ export default function MathSolver() {
                     </div>
                   </div>
                 )}
-                
+
                 {solution.type === 'quadratic' && (
                   <div className="text-[#0B2E33] space-y-2">
                     <div className="text-sm text-[#0B2E33]/70">
@@ -266,6 +266,25 @@ export default function MathSolver() {
                 )}
               </div>
             )}
+          </div>
+        </div>
+
+        {/* About Math Solver Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Math Solver Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Math Solver is an advanced utility designed to help students, teachers, and professionals solve mathematical equations quickly and accurately. Our tool supports a wide range of calculations, from simple arithmetic to complex algebraic equations.
+            </p>
+            <p>
+              Specifically, our math solver can handle:
+              <br />• <strong>Basic Arithmetic:</strong> Solve expressions involving addition, subtraction, multiplication, and division with proper order of operations (BODMAS/PEMDAS).
+              <br />• <strong>Linear Equations:</strong> Find the value of 'x' in first-degree equations like 2x + 3 = 7.
+              <br />• <strong>Quadratic Equations:</strong> Solve second-degree equations (ax² + bx + c = 0) using the quadratic formula, providing both real and complex roots along with the discriminant.
+            </p>
+            <p>
+              Simply type your equation into the input field above and click "Solve Equation." Our tool will analyze the input, apply the appropriate mathematical principles, and provide a clear, step-by-step result. It's the perfect companion for studying, checking homework, or performing quick technical calculations.
+            </p>
           </div>
         </div>
 

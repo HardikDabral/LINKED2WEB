@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Language Translator - Free Online Translation Tool | Handy Helper',
+  title: 'Language Translator - Free Online Translation Tool | Fruupy',
   description: 'Translate text between 100+ languages instantly. Free online language translator supporting multiple languages with accurate translations. Language translator, online translator, free translator, translate text, multilingual translator, language converter, text translator, translation tool.',
-  keywords: 'language translator, online translator, free translator, translate text, multilingual translator, language converter, text translator, translation tool',
+  keywords: 'fruupy, language translator, online translator, free translator, translate text, multilingual translator, language converter, text translator, translation tool',
 }
 
 export default function TranslatorLayout({ children }) {

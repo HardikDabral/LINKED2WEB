@@ -226,7 +226,7 @@ export default function Home() {
       category: 'Education & Learning'
     },
   ]
-  const filteredTools = tools.filter(tool => 
+  const filteredTools = tools.filter(tool =>
     tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     tool.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
     tool.category.toLowerCase().includes(searchQuery.toLowerCase())
@@ -240,8 +240,8 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Handy Helper Tools Collection",
-            "description": "Collection of free online calculators and utility tools",
+            "name": "Fruupy Tool Collection",
+            "description": "Collection of free online calculators and utility tools by Fruupy",
             "itemListElement": tools.slice(0, 10).map((tool, index) => ({
               "@type": "ListItem",
               "position": index + 1,
@@ -255,11 +255,11 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold text-[#0B2E33]">
-              Free Online Calculators & Tools - Handy Helper
+              Fruupy - Free Online Calculators & Tools
             </h1>
             <p className="text-sm md:text-base text-[#0B2E33]/90">A collection of useful tools to help you with everyday tasks.</p>
           </div>
-          
+
           <div className="relative max-w-md w-full">
             <input
               type="text"
@@ -287,7 +287,7 @@ export default function Home() {
                   <h2 className="text-base md:text-lg font-semibold text-[#0B2E33] mb-1">{tool.name}</h2>
                   <p className="text-xs md:text-sm text-[#0B2E33]/80 mb-2 md:mb-3">{tool.description}</p>
                   <span className="text-xs md:text-sm text-[#0B2E33] font-medium flex items-center gap-1">
-                    Use Tool 
+                    Use Tool
                     <span className="transform translate-x-0 group-hover:translate-x-1 transition-transform">→</span>
                   </span>
                 </div>

@@ -1,23 +1,23 @@
 export const metadata = {
-  title: 'GPA Calculator - Grade Point Average Calculator | Handy Helper',
+  title: 'GPA Calculator - Grade Point Average Calculator | Fruupy',
   description: 'Calculate your GPA (Grade Point Average) easily. Free GPA calculator for students with weighted and unweighted GPA calculations. GPA calculator, grade point average, GPA tool, GPA converter, calculate GPA, student GPA, academic calculator, grade calculator.',
-  keywords: 'GPA calculator, grade point average, GPA tool, GPA converter, calculate GPA, student GPA, academic calculator, grade calculator',
+  keywords: 'fruupy, GPA calculator, grade point average, GPA tool, GPA converter, calculate GPA, student GPA, academic calculator, grade calculator',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/gpa-calculator',
   },
   openGraph: {
-    title: 'GPA Calculator - Grade Point Average Calculator | Handy Helper',
+    title: 'GPA Calculator - Grade Point Average Calculator | Fruupy',
     description: 'Calculate your GPA (Grade Point Average) easily. Free GPA calculator for students with weighted and unweighted GPA calculations.',
     url: '/gpa-calculator',
-    siteName: 'Handy Helper Tools',
+    siteName: 'Fruupy',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'GPA Calculator' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GPA Calculator - Grade Point Average Calculator | Handy Helper',
+    title: 'GPA Calculator - Grade Point Average Calculator | Fruupy',
     description: 'Calculate your GPA (Grade Point Average) easily. Free GPA calculator for students.',
     images: ['/og-image.jpg'],
   },

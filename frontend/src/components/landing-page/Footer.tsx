@@ -19,21 +19,21 @@ export default function Footer() {
                 <div className="grid grid-cols-2 gap-10 md:grid-cols-4 lg:gap-16">
                     {/* Brand Column */}
                     <div className="col-span-2 md:col-span-1">
-                        <Link href="/" className="mb-6 block text-lg font-bold tracking-tight text-white">
-                            Linked2web
+                        <Link href="/" className="mb-6 block text-lg font-bold tracking-tight text-white uppercase italic">
+                            Fruupy
                         </Link>
                         <p className="text-xs leading-relaxed text-zinc-500 max-w-xs">
-                            Building the next generation of conversational search interfaces for the modern web.
+                            Discover powerful free online calculators and utility tools for everyday tasks. Fast, accurate, and 100% free.
                         </p>
                     </div>
 
                     {/* Links Column 1 */}
                     <div>
-                        <h3 className="mb-4 text-[10px] font-bold uppercase tracking-wider text-white">Product</h3>
+                        <h3 className="mb-4 text-[10px] font-bold uppercase tracking-wider text-white">Tools</h3>
                         <ul className="space-y-3">
-                            {['Features', 'Pricing', 'Changelog', 'Docs'].map((item) => (
+                            {['BMI Calculator', 'EMI Calculator', 'Age Calculator', 'Percentage'].map((item) => (
                                 <li key={item}>
-                                    <Link href="#" className="flex items-center gap-1 text-xs font-medium text-zinc-500 transition-colors hover:text-white">
+                                    <Link href={`/${item.toLowerCase().replace(' ', '-')}`} className="flex items-center gap-1 text-xs font-medium text-zinc-500 transition-colors hover:text-white">
                                         {item}
                                     </Link>
                                 </li>
@@ -45,9 +45,9 @@ export default function Footer() {
                     <div>
                         <h3 className="mb-4 text-[10px] font-bold uppercase tracking-wider text-white">Company</h3>
                         <ul className="space-y-3">
-                            {['About', 'Careers', 'Blog', 'Contact'].map((item) => (
+                            {['About', 'Privacy', 'Terms', 'Contact'].map((item) => (
                                 <li key={item}>
-                                    <Link href="#" className="flex items-center gap-1 text-xs font-medium text-zinc-500 transition-colors hover:text-white">
+                                    <Link href={`/${item.toLowerCase()}`} className="flex items-center gap-1 text-xs font-medium text-zinc-500 transition-colors hover:text-white">
                                         {item}
                                     </Link>
                                 </li>
@@ -74,12 +74,12 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row">
                     <p className="text-[10px] text-zinc-600">
-                        © {new Date().getFullYear()} Linked2web Inc. All rights reserved.
+                        © {new Date().getFullYear()} Fruupy. All rights reserved.
                     </p>
                     <div className="flex gap-6">
-                        {['Privacy', 'imgTerms', 'Cookies'].map((item) => (
-                            <Link key={item} href="#" className="text-[10px] text-zinc-600 transition-colors hover:text-zinc-400">
-                                {item.replace('img', '')}
+                        {['Privacy', 'Terms', 'Cookies'].map((item) => (
+                            <Link key={item} href={`/${item.toLowerCase()}`} className="text-[10px] text-zinc-600 transition-colors hover:text-zinc-400">
+                                {item}
                             </Link>
                         ))}
                     </div>
@@ -87,8 +87,8 @@ export default function Footer() {
 
                 {/* Big Watermark Effect */}
                 <div className="pointer-events-none absolute bottom-0 left-0 right-0 flex justify-center overflow-hidden opacity-[0.03]">
-                    <h1 className="select-none text-[15vw] font-bold leading-none text-white blur-sm">
-                        Linked2web
+                    <h1 className="select-none text-[15vw] font-bold leading-none text-white blur-sm uppercase italic">
+                        Fruupy
                     </h1>
                 </div>
             </div>

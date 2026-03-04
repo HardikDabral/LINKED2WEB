@@ -66,8 +66,8 @@ export default function CalorieCalculator() {
               <button
                 onClick={() => setUnit('metric')}
                 className={`flex-1 p-3 rounded-lg text-center transition-all ${unit === 'metric'
-                    ? 'bg-[#0B2E33] text-white'
-                    : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
+                  ? 'bg-[#0B2E33] text-white'
+                  : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
                   }`}
               >
                 Metric
@@ -75,8 +75,8 @@ export default function CalorieCalculator() {
               <button
                 onClick={() => setUnit('imperial')}
                 className={`flex-1 p-3 rounded-lg text-center transition-all ${unit === 'imperial'
-                    ? 'bg-[#0B2E33] text-white'
-                    : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
+                  ? 'bg-[#0B2E33] text-white'
+                  : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
                   }`}
               >
                 Imperial
@@ -88,8 +88,8 @@ export default function CalorieCalculator() {
               <button
                 onClick={() => setGender('male')}
                 className={`flex-1 p-3 rounded-lg text-center transition-all ${gender === 'male'
-                    ? 'bg-[#0B2E33] text-white'
-                    : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
+                  ? 'bg-[#0B2E33] text-white'
+                  : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
                   }`}
               >
                 Male
@@ -97,8 +97,8 @@ export default function CalorieCalculator() {
               <button
                 onClick={() => setGender('female')}
                 className={`flex-1 p-3 rounded-lg text-center transition-all ${gender === 'female'
-                    ? 'bg-[#0B2E33] text-white'
-                    : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
+                  ? 'bg-[#0B2E33] text-white'
+                  : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
                   }`}
               >
                 Female
@@ -187,6 +187,22 @@ export default function CalorieCalculator() {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+
+        {/* About Calorie Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Calorie Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Calorie Calculator determines the number of daily calories your body needs to maintain, lose, or gain weight. It uses the Mifflin-St Jeor Equation, which is currently considered the most accurate method for estimating Basal Metabolic Rate (BMR) for most people in modern clinical settings.
+            </p>
+            <p>
+              Your daily calorie requirement—also known as Total Daily Energy Expenditure (TDEE)—is calculated by taking your BMR and multiplying it by an activity factor that reflects your lifestyle. Whether you're sedentary or an extreme athlete, our tool provides a customized roadmap for your nutritional goals.
+            </p>
+            <p>
+              By entering your age, weight, height, and activity level above, you'll receive a clear breakdown of calories needed for weight maintenance, as well as targets for healthy weight loss or gain. This information is vital for anyone looking to manage their health, improve fitness, or achieve a specific body composition.
+            </p>
           </div>
         </div>
 

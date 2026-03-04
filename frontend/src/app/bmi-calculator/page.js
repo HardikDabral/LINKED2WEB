@@ -60,8 +60,8 @@ export default function BMICalculator() {
               <button
                 onClick={() => setUnit('metric')}
                 className={`flex-1 p-3 rounded-lg text-center transition-all ${unit === 'metric'
-                    ? 'bg-[#0B2E33] text-white'
-                    : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
+                  ? 'bg-[#0B2E33] text-white'
+                  : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
                   }`}
               >
                 Metric
@@ -69,8 +69,8 @@ export default function BMICalculator() {
               <button
                 onClick={() => setUnit('imperial')}
                 className={`flex-1 p-3 rounded-lg text-center transition-all ${unit === 'imperial'
-                    ? 'bg-[#0B2E33] text-white'
-                    : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
+                  ? 'bg-[#0B2E33] text-white'
+                  : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
                   }`}
               >
                 Imperial
@@ -135,6 +135,22 @@ export default function BMICalculator() {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+
+        {/* About BMI Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the BMI Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Body Mass Index (BMI) is a simple numerical measure of a person's thickness or thinness, allowing health professionals to discuss weight problems more objectively with their patients. It is calculated using your height and weight to determine if your weight is in a healthy proportion.
+            </p>
+            <p>
+              Our free online BMI calculator provides an accurate assessment based on the standard World Health Organization (WHO) categories. Whether you use metric or imperial units, this tool helps you understand your weight category—ranging from underweight to obese—and provides a target healthy weight range for your specific height.
+            </p>
+            <p>
+              Simply enter your weight and height above to get instant results. Monitoring your BMI is a great first step in managing your overall health and fitness goals.
+            </p>
           </div>
         </div>
 

@@ -1,23 +1,23 @@
 export const metadata = {
-  title: 'Countdown Timer - Free Online Countdown | Handy Helper',
+  title: 'Countdown Timer - Free Online Countdown | Fruupy',
   description: 'Create countdown timers for events, deadlines, and special moments. Free online countdown timer with customizable alerts and notifications. Countdown timer, timer, countdown, event timer, deadline timer, countdown clock, online timer, free timer.',
-  keywords: 'countdown timer, timer, countdown, event timer, deadline timer, countdown clock, online timer, free timer',
+  keywords: 'fruupy, countdown timer, timer, countdown, event timer, deadline timer, countdown clock, online timer, free timer',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/countdown-timer',
   },
   openGraph: {
-    title: 'Countdown Timer - Free Online Countdown | Handy Helper',
+    title: 'Countdown Timer - Free Online Countdown | Fruupy',
     description: 'Create countdown timers for events, deadlines, and special moments. Free online countdown timer with customizable alerts.',
     url: '/countdown-timer',
-    siteName: 'Handy Helper Tools',
+    siteName: 'Fruupy',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Countdown Timer' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Countdown Timer - Free Online Countdown | Handy Helper',
+    title: 'Countdown Timer - Free Online Countdown | Fruupy',
     description: 'Create countdown timers for events, deadlines, and special moments. Free online countdown timer.',
     images: ['/og-image.jpg'],
   },

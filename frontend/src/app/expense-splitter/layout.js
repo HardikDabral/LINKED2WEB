@@ -1,23 +1,23 @@
 export const metadata = {
-  title: 'Expense Splitter - Split Bills & Expenses | Handy Helper',
+  title: 'Expense Splitter - Split Bills & Expenses | Fruupy',
   description: 'Split bills and expenses among friends easily. Free expense splitter calculator for restaurants, trips, and shared costs. Expense splitter, bill splitter, split bills, expense calculator, bill calculator, cost splitter, shared expenses, split cost.',
-  keywords: 'expense splitter, bill splitter, split bills, expense calculator, bill calculator, cost splitter, shared expenses, split cost',
+  keywords: 'fruupy, expense splitter, bill splitter, split bills, expense calculator, bill calculator, cost splitter, shared expenses, split cost',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/expense-splitter',
   },
   openGraph: {
-    title: 'Expense Splitter - Split Bills & Expenses | Handy Helper',
+    title: 'Expense Splitter - Split Bills & Expenses | Fruupy',
     description: 'Split bills and expenses among friends easily. Free expense splitter calculator for restaurants, trips, and shared costs.',
     url: '/expense-splitter',
-    siteName: 'Handy Helper Tools',
+    siteName: 'Fruupy',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Expense Splitter' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Expense Splitter - Split Bills & Expenses | Handy Helper',
+    title: 'Expense Splitter - Split Bills & Expenses | Fruupy',
     description: 'Split bills and expenses among friends easily. Free expense splitter calculator.',
     images: ['/og-image.jpg'],
   },

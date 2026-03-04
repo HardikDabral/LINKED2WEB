@@ -15,7 +15,7 @@ export default function InterestCalculator() {
     const p = parseFloat(principal)
     const r = parseFloat(rate) / 100
     const t = parseFloat(time)
-    
+
     if (interestType === 'simple') {
       const interest = p * r * t
       const amount = p + interest
@@ -42,34 +42,32 @@ export default function InterestCalculator() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <RefreshCcw className="w-6 h-6" />
           </div>
           <h1 className="text-2xl font-bold text-[#0B2E33]">Free Interest Calculator - Calculate Interest Online</h1>
         </div>
-        
+
         <div className="bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
           <div className="space-y-4 mb-6">
             <div className="flex gap-4 mb-6">
               <button
                 onClick={() => setInterestType('simple')}
-                className={`flex-1 py-2 px-4 rounded-lg ${
-                  interestType === 'simple'
+                className={`flex-1 py-2 px-4 rounded-lg ${interestType === 'simple'
                     ? 'bg-[#0B2E33] text-white'
                     : 'bg-white/50 text-[#0B2E33] border border-[#93B1B5]/40'
-                }`}
+                  }`}
               >
                 Simple Interest
               </button>
               <button
                 onClick={() => setInterestType('compound')}
-                className={`flex-1 py-2 px-4 rounded-lg ${
-                  interestType === 'compound'
+                className={`flex-1 py-2 px-4 rounded-lg ${interestType === 'compound'
                     ? 'bg-[#0B2E33] text-white'
                     : 'bg-white/50 text-[#0B2E33] border border-[#93B1B5]/40'
-                }`}
+                  }`}
               >
                 Compound Interest
               </button>
@@ -88,7 +86,7 @@ export default function InterestCalculator() {
                 className="w-full p-3 border border-[#93B1B5]/40 rounded-lg bg-white/50 backdrop-blur-xl text-[#0B2E33] focus:outline-none focus:border-[#4F7C82] focus:ring-2 focus:ring-[#4F7C82]/20"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-[#0B2E33] mb-2 flex items-center">
                 <Percent className="w-4 h-4 mr-2" />
@@ -102,7 +100,7 @@ export default function InterestCalculator() {
                 className="w-full p-3 border border-[#93B1B5]/40 rounded-lg bg-white/50 backdrop-blur-xl text-[#0B2E33] focus:outline-none focus:border-[#4F7C82] focus:ring-2 focus:ring-[#4F7C82]/20"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-[#0B2E33] mb-2 flex items-center">
                 <Clock className="w-4 h-4 mr-2" />
@@ -156,6 +154,23 @@ export default function InterestCalculator() {
               </div>
             </div>
           )}
+        </div>
+
+        {/* About Interest Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Interest Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Interest Calculator is an essential financial tool for understanding how your money grows over time or how much you'll owe on a loan. It supports both Simple Interest and Compound Interest calculations, giving you a complete picture of your financial scenarios.
+            </p>
+            <p>
+              • <strong>Simple Interest:</strong> Calculated only on the principal amount of a loan or deposit. The formula used is (Principal × Rate × Time) / 100.
+              <br />• <strong>Compound Interest:</strong> Calculated on the principal amount and also on the accumulated interest of previous periods. Our tool allows you to specify compounding frequencies such as yearly, half-yearly, quarterly, or monthly to see the power of compounding in action.
+            </p>
+            <p>
+              Whether you're planning an investment, saving for a goal, or calculating the cost of a personal loan, our free online interest calculator provides accurate and instant results. Simply choose the interest type, enter your details, and see the total interest and final amount immediately.
+            </p>
+          </div>
         </div>
 
         {/* Related Tools Section */}

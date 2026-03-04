@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { Percent, Calculator, ArrowRight} from 'lucide-react'
+import { Percent, Calculator, ArrowRight } from 'lucide-react'
 
 export default function PercentageCalculator() {
   const [mode, setMode] = useState('findPercentage') // findPercentage, findValue, findTotal
@@ -60,7 +60,7 @@ export default function PercentageCalculator() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <Percent className="w-6 h-6" />
@@ -77,31 +77,28 @@ export default function PercentageCalculator() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <button
                 onClick={() => setMode('findPercentage')}
-                className={`p-3 rounded-lg text-center transition-all ${
-                  mode === 'findPercentage'
+                className={`p-3 rounded-lg text-center transition-all ${mode === 'findPercentage'
                     ? 'bg-[#0B2E33] text-white'
                     : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                }`}
+                  }`}
               >
                 What % of Total?
               </button>
               <button
                 onClick={() => setMode('findValue')}
-                className={`p-3 rounded-lg text-center transition-all ${
-                  mode === 'findValue'
+                className={`p-3 rounded-lg text-center transition-all ${mode === 'findValue'
                     ? 'bg-[#0B2E33] text-white'
                     : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                }`}
+                  }`}
               >
                 % of a Number
               </button>
               <button
                 onClick={() => setMode('findTotal')}
-                className={`p-3 rounded-lg text-center transition-all ${
-                  mode === 'findTotal'
+                className={`p-3 rounded-lg text-center transition-all ${mode === 'findTotal'
                     ? 'bg-[#0B2E33] text-white'
                     : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                }`}
+                  }`}
               >
                 Value is % of What?
               </button>
@@ -157,8 +154,8 @@ export default function PercentageCalculator() {
                   <div className="flex-1 text-center">
                     <div className="text-sm text-[#0B2E33]/70">
                       {mode === 'findPercentage' ? `${number1} is what % of ${number2}?` :
-                       mode === 'findValue' ? `${number2}% of ${number1} is:` :
-                       `${number1} is ${number2}% of what?`}
+                        mode === 'findValue' ? `${number2}% of ${number1} is:` :
+                          `${number1} is ${number2}% of what?`}
                     </div>
                     <div className="mt-2 text-2xl font-bold text-[#0B2E33]">
                       {result}{mode === 'findPercentage' ? '%' : ''}
@@ -167,6 +164,22 @@ export default function PercentageCalculator() {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+
+        {/* About Percentage Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Percentage Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              A percentage is a way of expressing a number as a fraction of 100. It is often denoted using the percent sign "%". Percentages are used ubiquitously in daily life, from calculating discounts and taxes to measuring increase or decrease in quantities.
+            </p>
+            <p>
+              Our free online percentage calculator offers three versatile modes: calculating what percentage one number is of another, finding the specific value of a percentage of a total, and determining the original total when you know a specific value and its percentage. This multi-functional tool ensures you can solve any percentage-based math problem instantly.
+            </p>
+            <p>
+              Whether you're a student working on math assignments, a business professional calculating growth, or a shopper finding the best deals, our calculator provides accurate results in seconds. Just select your calculation mode, enter the numbers, and get your answer.
+            </p>
           </div>
         </div>
 

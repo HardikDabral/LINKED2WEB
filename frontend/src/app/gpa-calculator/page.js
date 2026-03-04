@@ -13,7 +13,7 @@ export default function GPACalculator() {
       calculate: (percentages) => {
         const validGrades = percentages.filter(p => p !== '')
         if (validGrades.length === 0) return { value: 0, description: '' }
-        
+
         const sum = validGrades.reduce((total, p) => total + parseFloat(p), 0)
         const average = sum / validGrades.length
         return {
@@ -27,7 +27,7 @@ export default function GPACalculator() {
       calculate: (percentages) => {
         const validGrades = percentages.filter(p => p !== '')
         if (validGrades.length === 0) return { value: 0, description: '' }
-        
+
         // Convert percentages to CGPA (10-point scale)
         const cgpas = validGrades.map(p => {
           const percent = parseFloat(p)
@@ -39,7 +39,7 @@ export default function GPACalculator() {
           if (percent >= 40) return 5
           return 0
         })
-        
+
         const sum = cgpas.reduce((total, cgpa) => total + cgpa, 0)
         const average = sum / cgpas.length
         return {
@@ -53,7 +53,7 @@ export default function GPACalculator() {
       calculate: (percentages) => {
         const validGrades = percentages.filter(p => p !== '')
         if (validGrades.length === 0) return { value: 0, description: '' }
-        
+
         // Convert percentages to 4.0 scale (approximate conversion)
         const gpas = validGrades.map(p => {
           const percent = parseFloat(p)
@@ -69,7 +69,7 @@ export default function GPACalculator() {
           if (percent >= 40) return 1.0
           return 0.0
         })
-        
+
         const sum = gpas.reduce((total, gpa) => total + gpa, 0)
         const average = sum / gpas.length
         return {
@@ -105,7 +105,7 @@ export default function GPACalculator() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <GraduationCap className="w-6 h-6" />
@@ -182,6 +182,22 @@ export default function GPACalculator() {
                 <span className="text-2xl font-bold text-[#0B2E33]">{result.description}</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* About GPA Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the GPA Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Grade Point Average (GPA) is a standard way to measure academic achievement in schools and universities. It represents the average value of the cumulative final grades which are converted into a specific scale, such as a 4.0 or 10.0 scale.
+            </p>
+            <p>
+              Our free online GPA calculator is a versatile tool designed to support multiple grading systems. Whether you need to calculate your simple average percentage, convert your scores to a 10-point CGPA system, or see your standing on a traditional 4.0 GPA scale, this tool has you covered. It's an essential resource for students tracking their academic progress or preparing for college applications.
+            </p>
+            <p>
+              To use the calculator, select your preferred grading system, add your subjects and their respective percentages, and see your results updated in real-time. You can add as many subjects as needed to get a comprehensive view of your semester or cumulative performance.
+            </p>
           </div>
         </div>
 

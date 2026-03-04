@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function PrivacyPage() {
   return (
     <>
-      <h1 className="sr-only">Privacy Policy - Handy Helper Tools</h1>
+      <h1 className="sr-only">Privacy Policy - Fruupy</h1>
       <div className="min-h-screen ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="bg-white/50 backdrop-blur-xl rounded-xl p-8 shadow-md border border-[#93B1B5]/40">
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
               <section>
                 <h2 className="text-2xl font-bold text-[#0B2E33] mt-8 mb-4">1. Introduction</h2>
                 <p className="text-[#0B2E33]/90 leading-relaxed">
-                  Handy Helper Tools ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our free online calculators and utility tools.
+                  Fruupy ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our free online calculators and utility tools.
                 </p>
               </section>
 
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
               <section>
                 <h2 className="text-2xl font-bold text-[#0B2E33] mt-8 mb-4">6. Third-Party Services</h2>
                 <p className="text-[#0B2E33]/90 leading-relaxed">
-                  Our website may contain links to third-party websites or services that are not owned or controlled by Handy Helper Tools. We have no control over, and assume no responsibility for, the privacy policies or practices of any third-party websites or services.
+                  Our website may contain links to third-party websites or services that are not owned or controlled by Fruupy. We have no control over, and assume no responsibility for, the privacy policies or practices of any third-party websites or services.
                 </p>
               </section>
 

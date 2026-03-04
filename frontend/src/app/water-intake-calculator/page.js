@@ -42,7 +42,7 @@ export default function WaterIntakeCalculator() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <Droplets className="w-6 h-6" />
@@ -59,21 +59,19 @@ export default function WaterIntakeCalculator() {
             <div className="flex gap-4">
               <button
                 onClick={() => setUnit('metric')}
-                className={`flex-1 p-3 rounded-lg text-center transition-all ${
-                  unit === 'metric'
+                className={`flex-1 p-3 rounded-lg text-center transition-all ${unit === 'metric'
                     ? 'bg-[#0B2E33] text-white'
                     : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                }`}
+                  }`}
               >
                 Metric (kg)
               </button>
               <button
                 onClick={() => setUnit('imperial')}
-                className={`flex-1 p-3 rounded-lg text-center transition-all ${
-                  unit === 'imperial'
+                className={`flex-1 p-3 rounded-lg text-center transition-all ${unit === 'imperial'
                     ? 'bg-[#0B2E33] text-white'
                     : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                }`}
+                  }`}
               >
                 Imperial (lbs)
               </button>
@@ -113,31 +111,28 @@ export default function WaterIntakeCalculator() {
               <div className="flex gap-4">
                 <button
                   onClick={() => setClimate('cold')}
-                  className={`flex-1 p-3 rounded-lg text-center transition-all ${
-                    climate === 'cold'
+                  className={`flex-1 p-3 rounded-lg text-center transition-all ${climate === 'cold'
                       ? 'bg-[#0B2E33] text-white'
                       : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                  }`}
+                    }`}
                 >
                   Cold
                 </button>
                 <button
                   onClick={() => setClimate('moderate')}
-                  className={`flex-1 p-3 rounded-lg text-center transition-all ${
-                    climate === 'moderate'
+                  className={`flex-1 p-3 rounded-lg text-center transition-all ${climate === 'moderate'
                       ? 'bg-[#0B2E33] text-white'
                       : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                  }`}
+                    }`}
                 >
                   Moderate
                 </button>
                 <button
                   onClick={() => setClimate('hot')}
-                  className={`flex-1 p-3 rounded-lg text-center transition-all ${
-                    climate === 'hot'
+                  className={`flex-1 p-3 rounded-lg text-center transition-all ${climate === 'hot'
                       ? 'bg-[#0B2E33] text-white'
                       : 'bg-white/50 text-[#0B2E33] hover:bg-[#0B2E33] hover:text-white'
-                  }`}
+                    }`}
                 >
                   Hot
                 </button>
@@ -170,6 +165,22 @@ export default function WaterIntakeCalculator() {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+
+        {/* About Water Intake Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Water Intake Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              Staying hydrated is crucial for almost every bodily function, from maintaining body temperature and lubricating joints to getting rid of wastes. The amount of water you need depends on various factors including your weight, activity level, and the climate you live in.
+            </p>
+            <p>
+              Our free online water intake calculator uses a scientifically-backed approach to estimate your daily hydration needs. It starts with your body weight and applies multipliers based on how active you are—since physical exertion leads to water loss through sweat. Additionally, it adjusts for climate conditions: hot weather increases your need for fluids, while cold weather might slightly decrease it.
+            </p>
+            <p>
+              By providing your weight, activity level, and current climate above, you'll receive a clear recommendation in liters and milliliters, as well as an estimate of how many standard glasses of water you should aim for. Use this tool as a daily guide to ensure you're giving your body the hydration it needs to perform at its best.
+            </p>
           </div>
         </div>
 

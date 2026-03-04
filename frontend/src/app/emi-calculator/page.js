@@ -14,19 +14,19 @@ export default function EMICalculator() {
   // Validate inputs
   const validateInputs = () => {
     const newErrors = {}
-    
+
     if (!loanAmount || parseFloat(loanAmount) <= 0 || parseFloat(loanAmount) > 100000000) {
       newErrors.loanAmount = 'Please enter a valid amount (₹1 - ₹10 crore)'
     }
-    
+
     if (!interestRate || parseFloat(interestRate) <= 0 || parseFloat(interestRate) > 100) {
       newErrors.interestRate = 'Please enter a valid rate (0.1% - 100%)'
     }
-    
+
     if (!loanTerm || parseFloat(loanTerm) <= 0 || parseFloat(loanTerm) > 30) {
       newErrors.loanTerm = 'Please enter a valid term (1 - 30 years)'
     }
-    
+
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
@@ -42,7 +42,7 @@ export default function EMICalculator() {
 
   const calculateEMI = () => {
     if (!validateInputs()) return
-    
+
     const principal = parseFloat(loanAmount)
     const rate = parseFloat(interestRate) / 12 / 100
     const time = parseFloat(loanTerm) * 12
@@ -66,14 +66,14 @@ export default function EMICalculator() {
         calculateEMI()
       }
     }
-    
+
     window.addEventListener('keypress', handleKeyPress)
     return () => window.removeEventListener('keypress', handleKeyPress)
   }, [loanAmount, interestRate, loanTerm])
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <DollarSign className="w-6 h-6" />
@@ -83,7 +83,7 @@ export default function EMICalculator() {
             <p className="text-sm text-[#0B2E33]/80">Calculate your monthly loan payments</p>
           </div>
         </div>
-        
+
         <div className="bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
           <div className="space-y-4 mb-6">
             <div>
@@ -120,7 +120,7 @@ export default function EMICalculator() {
                 </div>
               )}
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-[#0B2E33] mb-2 flex items-center">
                 <Percent className="w-4 h-4 mr-2" />
@@ -151,7 +151,7 @@ export default function EMICalculator() {
                 </div>
               )}
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-[#0B2E33] mb-2 flex items-center">
                 <Clock className="w-4 h-4 mr-2" />
@@ -187,20 +187,19 @@ export default function EMICalculator() {
               )}
             </div>
           </div>
-    
+
           <button
             onClick={calculateEMI}
             disabled={!loanAmount || !interestRate || !loanTerm}
-            className={`w-full py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 ${
-              !loanAmount || !interestRate || !loanTerm 
-                ? 'bg-gray-400 cursor-not-allowed text-gray-600' 
+            className={`w-full py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 ${!loanAmount || !interestRate || !loanTerm
+                ? 'bg-gray-400 cursor-not-allowed text-gray-600'
                 : 'bg-[#0B2E33] text-white hover:bg-[#4F7C82]'
-            }`}
+              }`}
           >
             <Calculator className="w-4 h-4" />
             Calculate EMI
           </button>
-    
+
           {emi && (
             <div className="mt-8 space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -217,12 +216,12 @@ export default function EMICalculator() {
                   <div className="text-sm text-[#0B2E33]/70">Total Interest</div>
                 </div>
               </div>
-              
+
               <div className="bg-[#B8E3E9]/20 p-4 rounded-lg border border-[#93B1B5]/30 overflow-hidden">
                 <div className="text-xl md:text-2xl font-bold text-[#0B2E33] truncate">₹{emi.totalAmount}</div>
                 <div className="text-sm text-[#0B2E33]/70">Total Payment (Principal + Interest)</div>
               </div>
-              
+
               <div className="flex items-start p-3 bg-[#0B2E33]/10 rounded-lg text-[#0B2E33] text-sm">
                 <Info className="w-4 h-4 mt-0.5 mr-2 flex-shrink-0" />
                 <div>
@@ -232,6 +231,22 @@ export default function EMICalculator() {
               </div>
             </div>
           )}
+        </div>
+
+        {/* About EMI Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the EMI Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              An Equated Monthly Installment (EMI) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMIs are used to pay off both interest and principal each month, so that over a specified number of years, the loan is paid off in full.
+            </p>
+            <p>
+              Our free online EMI calculator uses the standard mathematical formula: [P x R x (1+R)^N]/[(1+R)^N-1]. Here, P stands for the principal loan amount, R is the monthly interest rate, and N is the number of monthly installments. This tool provides an instant breakdown of your monthly EMI, the total interest payable, and the total amount you will repay over the loan term.
+            </p>
+            <p>
+              This financial tool is essential for planning your budget when taking a home loan, car loan, or personal loan. By adjusting the interest rate and loan term, you can see how different scenarios affect your monthly outgoings and total repayment cost.
+            </p>
+          </div>
         </div>
 
         {/* Related Tools Section */}

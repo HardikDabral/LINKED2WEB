@@ -56,50 +56,50 @@ export default function WordCounter() {
         </div>
 
         <div className="space-y-6">
-            <div className="bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
-              <h2 className="text-lg font-semibold text-[#0B2E33] mb-4">Text Statistics</h2>
-              <div className="space-y-4">
-                <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
-                  <div className="flex items-center gap-2 text-[#0B2E33]">
-                    <Type className="w-4 h-4" />
-                    <span>Words</span>
-                  </div>
-                  <span className="font-semibold text-[#0B2E33]">{stats.words}</span>
+          <div className="bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+            <h2 className="text-lg font-semibold text-[#0B2E33] mb-4">Text Statistics</h2>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
+                <div className="flex items-center gap-2 text-[#0B2E33]">
+                  <Type className="w-4 h-4" />
+                  <span>Words</span>
                 </div>
+                <span className="font-semibold text-[#0B2E33]">{stats.words}</span>
+              </div>
 
-                <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
-                  <div className="flex items-center gap-2 text-[#0B2E33]">
-                    <Hash className="w-4 h-4" />
-                    <span>Characters</span>
-                  </div>
-                  <span className="font-semibold text-[#0B2E33]">{stats.characters}</span>
+              <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
+                <div className="flex items-center gap-2 text-[#0B2E33]">
+                  <Hash className="w-4 h-4" />
+                  <span>Characters</span>
                 </div>
+                <span className="font-semibold text-[#0B2E33]">{stats.characters}</span>
+              </div>
 
-                <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
-                  <div className="flex items-center gap-2 text-[#0B2E33]">
-                    <Hash className="w-4 h-4" />
-                    <span>Characters (no spaces)</span>
-                  </div>
-                  <span className="font-semibold text-[#0B2E33]">{stats.charactersNoSpace}</span>
+              <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
+                <div className="flex items-center gap-2 text-[#0B2E33]">
+                  <Hash className="w-4 h-4" />
+                  <span>Characters (no spaces)</span>
                 </div>
+                <span className="font-semibold text-[#0B2E33]">{stats.charactersNoSpace}</span>
+              </div>
 
-                <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
-                  <div className="flex items-center gap-2 text-[#0B2E33]">
-                    <AlignJustify className="w-4 h-4" />
-                    <span>Sentences</span>
-                  </div>
-                  <span className="font-semibold text-[#0B2E33]">{stats.sentences}</span>
+              <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
+                <div className="flex items-center gap-2 text-[#0B2E33]">
+                  <AlignJustify className="w-4 h-4" />
+                  <span>Sentences</span>
                 </div>
+                <span className="font-semibold text-[#0B2E33]">{stats.sentences}</span>
+              </div>
 
-                <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
-                  <div className="flex items-center gap-2 text-[#0B2E33]">
-                    <AlignJustify className="w-4 h-4" />
-                    <span>Paragraphs</span>
-                  </div>
-                  <span className="font-semibold text-[#0B2E33]">{stats.paragraphs}</span>
+              <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
+                <div className="flex items-center gap-2 text-[#0B2E33]">
+                  <AlignJustify className="w-4 h-4" />
+                  <span>Paragraphs</span>
                 </div>
+                <span className="font-semibold text-[#0B2E33]">{stats.paragraphs}</span>
+              </div>
 
-                {/* <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
+              {/* <div className="flex items-center justify-between p-3 bg-[#B8E3E9]/20 rounded-lg">
                   <div className="flex items-center gap-2 text-[#0B2E33]">
                     <Clock className="w-4 h-4" />
                     <span>Reading Time</span>
@@ -108,29 +108,45 @@ export default function WordCounter() {
                     {stats.readingTime} {stats.readingTime === 1 ? 'minute' : 'minutes'}
                   </span>
                 </div> */}
-              </div>
-            </div>
-          </div>
-
-          {/* Related Tools Section */}
-          <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
-            <h2 className="text-xl font-bold text-[#0B2E33] mb-4">Related Tools</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <Link href="/language-translator" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
-                → Language Translator
-              </Link>
-              <Link href="/json-formatter" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
-                → JSON Formatter
-              </Link>
-              <Link href="/base64-tool" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
-                → Base64 Tool
-              </Link>
-              <Link href="/" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
-                → View All Tools
-              </Link>
             </div>
           </div>
         </div>
+
+        {/* About Word Counter Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40 mb-6">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Word Counter Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Word Counter is a versatile writing tool designed to provide real-time statistics on your text. Whether you're a student keeping within a strict essay limit, a blogger optimizing for SEO, or an author tracking your daily progress, this tool offers a comprehensive breakdown of your content.
+            </p>
+            <p>
+              Our free online word counter goes beyond just counting words. It provides detailed metrics including character count (both with and without spaces), the number of sentences, and the total number of paragraphs. This allows for a deeper analysis of your writing's complexity and structure.
+            </p>
+            <p>
+              Simply paste your text or type directly into the area above to get instant results. The statistics update as you type, making it an efficient workspace for drafting and refining your content. With no character limit and no login required, it's the ideal utility for all your writing needs.
+            </p>
+          </div>
+        </div>
+
+        {/* Related Tools Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">Related Tools</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/language-translator" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
+              → Language Translator
+            </Link>
+            <Link href="/json-formatter" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
+              → JSON Formatter
+            </Link>
+            <Link href="/base64-tool" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
+              → Base64 Tool
+            </Link>
+            <Link href="/" className="text-[#0B2E33] hover:text-[#4F7C82] transition-colors text-sm">
+              → View All Tools
+            </Link>
+          </div>
+        </div>
       </div>
+    </div>
   )
 }

@@ -15,14 +15,14 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: 'Handy Helper Tools - Free Online Calculators & Utility Tools',
-    template: '%s | Handy Helper Tools'
+    default: 'Fruupy - Free Online Calculators & Utility Tools',
+    template: '%s | Fruupy'
   },
-  description: 'Free online calculators: BMI, EMI, age, percentage & more. Accurate, reliable utility tools. Fast and completely free.',
-  keywords: 'handy helper tools, online calculator, free tools, BMI calculator, EMI calculator, age calculator, percentage calculator, utility tools, web calculator, math tools, financial calculator, unit converter, online tools, free calculator',
-  authors: [{ name: 'Handy Helper Tools Team' }],
-  creator: 'Handy Helper Tools',
-  publisher: 'Handy Helper Tools',
+  description: 'Fruupy provides accurate free online calculators for BMI, EMI, age, percentage and more. Solve everyday tasks with our reliable, fast, and 100% free utility tools. No login required.',
+  keywords: 'fruupy, free online calculators, BMI calculator, EMI calculator, age calculator, percentage calculator, utility tools, web calculator, math tools, financial calculator, unit converter, online tools, free calculator',
+  authors: [{ name: 'Fruupy Team' }],
+  creator: 'Fruupy',
+  publisher: 'Fruupy',
   formatDetection: {
     email: false,
     address: false,
@@ -36,25 +36,25 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com/' : 'http://localhost:3000',
-    siteName: 'Handy Helper Tools',
-    title: 'Handy Helper Tools - Free Online Calculators & Utility Tools',
-    description: 'Free online calculators and utility tools for everyday use. Fast, accurate, and free.',
+    siteName: 'Fruupy',
+    title: 'Fruupy - Free Online Calculators & Utility Tools',
+    description: 'Explore Fruupy for a comprehensive collection of free online calculators and utility tools. Get accurate results for BMI, EMI, age, and more with our fast and reliable tools.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Handy Helper Tools - Free Online Calculators & Utility Tools',
+        alt: 'Fruupy - Free Online Calculators & Utility Tools',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Handy Helper Tools - Free Online Calculators & Utility Tools',
-    description: 'Free online calculators: BMI, EMI, age, percentage & more. Accurate, reliable utility tools. Fast and completely free.',
+    title: 'Fruupy - Free Online Calculators & Utility Tools',
+    description: 'Fruupy provides accurate free online calculators for BMI, EMI, age, and percentage. Our reliable utility tools are designed for speed and precision. 100% free for everyone.',
     images: ['/og-image.jpg'],
-    creator: '@handyhelpertools',
-    site: '@handyhelpertools',
+    creator: '@fruupy',
+    site: '@fruupy',
   },
   robots: {
     index: true,
@@ -85,11 +85,11 @@ export const metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
-  applicationName: 'Handy Helper Tools',
+  applicationName: 'Fruupy',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Handy Helper Tools',
+    title: 'Fruupy',
   },
   manifest: '/manifest.json',
   icons: {
@@ -116,8 +116,8 @@ export default function RootLayout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Handy Helper Tools",
-    "description": "Free online calculators and utility tools for everyday use. BMI calculator, EMI calculator, age calculator, and 30+ more tools.",
+    "name": "Fruupy",
+    "description": "Fruupy offers more than 30+ professional free online calculators and utility tools for everyday use. From financial EMI calculations to health BMI tracking, we provide accurate and fast results.",
     "url": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com" : "http://localhost:3000",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web",
@@ -154,10 +154,10 @@ export default function RootLayout({ children }) {
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Handy Helper Tools",
+    "name": "Fruupy",
     "url": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com" : "http://localhost:3000",
     "logo": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com/logo.png" : "http://localhost:3000/logo.png",
-    "description": "Free online calculators and utility tools",
+    "description": "Fruupy provides a wide range of reliable, free online calculators and utility tools designed to help users with everyday tasks efficiently.",
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "handyhelpertoolscalculator@gmail.com",
@@ -172,12 +172,12 @@ export default function RootLayout({ children }) {
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Handy Helper Tools",
+    "name": "Fruupy",
     "url": process.env.NODE_ENV === 'production' ? "https://www.fruupy.com" : "http://localhost:3000",
-    "description": "Free online calculators and utility tools",
+    "description": "The ultimate destination for accurate, fast, and free online calculators and utility tools for every use case.",
     "publisher": {
       "@type": "Organization",
-      "name": "Handy Helper Tools"
+      "name": "Fruupy"
     }
   }
   return (

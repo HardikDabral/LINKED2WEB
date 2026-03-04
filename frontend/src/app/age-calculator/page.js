@@ -18,7 +18,7 @@ export default function AgeCalculator() {
 
     const birth = new Date(birthDate)
     const today = new Date()
-    
+
     if (birth > today) {
       setError("Birth date cannot be in the future")
       setAge(null)
@@ -26,7 +26,7 @@ export default function AgeCalculator() {
     }
 
     setError('')
-    
+
     let years = today.getFullYear() - birth.getFullYear()
     let months = today.getMonth() - birth.getMonth()
     let days = today.getDate() - birth.getDate()
@@ -49,9 +49,9 @@ export default function AgeCalculator() {
     }
     const daysUntilNextBirthday = Math.floor((nextBirthday - today) / (1000 * 60 * 60 * 24))
 
-    setAge({ 
-      years, 
-      months, 
+    setAge({
+      years,
+      months,
       days,
       totalDays,
       totalMonths,
@@ -79,7 +79,7 @@ export default function AgeCalculator() {
           </div>
           <h1 className="text-2xl font-bold text-[#0B2E33]">Free Age Calculator - Calculate Your Exact Age Online</h1>
         </div>
-        
+
         <div className="bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-lg border border-[#93B1B5]/50">
           <div className="mb-6">
             <label className="block text-sm font-medium text-[#0B2E33] mb-2 flex items-center">
@@ -101,7 +101,7 @@ export default function AgeCalculator() {
             </div>
             {error && <p className="mt-2 text-sm text-red-600 flex items-center"><Frown className="w-4 h-4 mr-1" /> {error}</p>}
           </div>
-          
+
           <div className="flex gap-4 mb-6">
             <button
               onClick={calculateAge}
@@ -119,7 +119,7 @@ export default function AgeCalculator() {
               {showDetails ? 'Hide Details' : 'Show Details'}
             </button>
           </div>
-    
+
           {age && (
             <div className="space-y-6">
               <div className="animate-fade-in">
@@ -211,6 +211,22 @@ export default function AgeCalculator() {
 
         <div className="mt-6 text-center text-xs text-[#0B2E33]/50">
           Note: Age calculation is based on the Gregorian calendar
+        </div>
+
+        {/* About Age Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Age Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Age Calculator is a highly accurate tool designed to determine your exact age based on the Gregorian calendar. Using your date of birth, it calculates the time elapsed in years, months, and days, providing a precise breakdown of your life journey so far.
+            </p>
+            <p>
+              Beyond just your current age, this tool offers detailed insights such as the total number of days you've been alive, your current life stage, and even a countdown to your next birthday. Whether you're curious about your chronological age or need the exact figure for official purposes, our calculator provides instant and reliable results.
+            </p>
+            <p>
+              To use the tool, simply select your birth date from the calendar input above and click "Calculate Age." You can then toggle the "Show Details" button for even more granular information about your age.
+            </p>
+          </div>
         </div>
 
         {/* Related Tools Section */}

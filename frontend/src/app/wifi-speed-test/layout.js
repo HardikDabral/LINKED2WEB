@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'WiFi Speed Test - Test Internet Speed | Handy Helper',
+  title: 'WiFi Speed Test - Test Internet Speed | Fruupy',
   description: 'Test your internet connection speed instantly. Free WiFi speed test tool to check download, upload speeds, and ping. WiFi speed test, internet speed test, speed test, network speed, bandwidth test, connection speed, speed checker, internet test.',
-  keywords: 'wifi speed test, internet speed test, speed test, network speed, bandwidth test, connection speed, speed checker, internet test',
+  keywords: 'fruupy, wifi speed test, internet speed test, speed test, network speed, bandwidth test, connection speed, speed checker, internet test',
 }
 
 export default function WiFiLayout({ children }) {

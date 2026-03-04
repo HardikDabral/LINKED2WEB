@@ -41,7 +41,7 @@ export default function Herosection() {
             data-aos-delay="100"
             className="mb-6 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 backdrop-blur-md sm:mb-8 sm:px-4 sm:py-2 md:px-5 md:py-2.5">
             <span className="text-[10px] font-medium uppercase tracking-wider text-zinc-300 sm:text-xs sm:font-semibold sm:text-zinc-200">
-              FRUUPY · HANDY HELPER TOOLS
+              FRUUPY · Fruupy TOOLS
             </span>
           </div>
 

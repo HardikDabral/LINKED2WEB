@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group">
             <Wrench className="w-5 h-5 md:w-6 md:h-6 mr-2 text-[#0B2E33] group-hover:scale-110 transition-transform duration-300" />
             <span className="font-bold text-base md:text-xl text-[#0B2E33]">
-              Handy Helper
+              Fruupy
             </span>
           </Link>
 

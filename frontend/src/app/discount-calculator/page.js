@@ -31,7 +31,7 @@ export default function DiscountCalculator() {
 
   return (
     <div className="min-h-screen  flex justify-center">
-  <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
+      <div className="max-w-2xl w-full mx-4 sm:mx-auto p-6 pt-16">
         <div className="flex items-center mb-8">
           <div className="p-3 rounded-lg bg-[#0B2E33] text-white mr-4 animate-bounce">
             <Calculator className="w-6 h-6" />
@@ -117,6 +117,22 @@ export default function DiscountCalculator() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* About Discount Calculator Section */}
+        <div className="mt-8 bg-white/50 backdrop-blur-xl rounded-xl p-6 shadow-md border border-[#93B1B5]/40">
+          <h2 className="text-xl font-bold text-[#0B2E33] mb-4">How the Discount Calculator Works</h2>
+          <div className="text-sm text-[#0B2E33]/80 space-y-4 leading-relaxed">
+            <p>
+              The Discount Calculator is a simple yet powerful tool tailored for shoppers and business owners to determine the savings and final price of an item after applying one or more discounts. It effectively handles both single and stacked (additional) discounts.
+            </p>
+            <p>
+              When you enter the original price and a primary discount percentage, the tool calculates the initial reduction. If there is an additional discount (like a 'sale on top of sale'), our calculator applies it to the already-reduced price, giving you a true final price and showing you the total cumulative percentage you've saved.
+            </p>
+            <p>
+              This tool is perfect for seasonal sales, clearance events, and promotional offers. Never be confused by 'double discount' math again—just enter the numbers and find out exactly how much you'll be paying at the checkout.
+            </p>
           </div>
         </div>
 

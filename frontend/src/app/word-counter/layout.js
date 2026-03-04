@@ -1,23 +1,23 @@
 export const metadata = {
-  title: 'Word Counter - Count Words & Characters | Handy Helper',
+  title: 'Word Counter - Count Words & Characters | Fruupy',
   description: 'Count words, characters, sentences, and paragraphs in your text. Free word counter tool with detailed statistics. Word counter, character counter, word count, text counter, word tool, character count, word analyzer, text analyzer.',
-  keywords: 'word counter, character counter, word count, text counter, word tool, character count, word analyzer, text analyzer',
+  keywords: 'fruupy, word counter, character counter, word count, text counter, word tool, character count, word analyzer, text analyzer',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/word-counter',
   },
   openGraph: {
-    title: 'Word Counter - Count Words & Characters | Handy Helper',
+    title: 'Word Counter - Count Words & Characters | Fruupy',
     description: 'Count words, characters, sentences, and paragraphs in your text. Free word counter tool with detailed statistics.',
     url: '/word-counter',
-    siteName: 'Handy Helper Tools',
+    siteName: 'Fruupy',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Word Counter' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Word Counter - Count Words & Characters | Handy Helper',
+    title: 'Word Counter - Count Words & Characters | Fruupy',
     description: 'Count words, characters, sentences, and paragraphs in your text. Free word counter tool.',
     images: ['/og-image.jpg'],
   },

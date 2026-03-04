@@ -1,16 +1,16 @@
 export const metadata = {
-  title: 'BMI Calculator - Free Body Mass Index Calculator | Handy Helper',
+  title: 'BMI Calculator - Free Body Mass Index Calculator | Fruupy',
   description: 'Calculate your Body Mass Index (BMI) for free. Supports metric and imperial units. Get instant BMI results, weight category, and healthy weight range recommendations. BMI calculator, body mass index, BMI tool, health calculator, weight calculator, BMI metric, BMI imperial, free BMI calculator, BMI chart, healthy weight.',
-  keywords: 'BMI calculator, body mass index, BMI tool, health calculator, weight calculator, BMI metric, BMI imperial, free BMI calculator, BMI chart, healthy weight',
+  keywords: 'fruupy, BMI calculator, body mass index, BMI tool, health calculator, weight calculator, BMI metric, BMI imperial, free BMI calculator, BMI chart, healthy weight',
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
   alternates: {
     canonical: '/bmi-calculator',
   },
   openGraph: {
-    title: 'BMI Calculator - Free Body Mass Index Calculator | Handy Helper',
+    title: 'BMI Calculator - Free Body Mass Index Calculator | Fruupy',
     description: 'Calculate your Body Mass Index (BMI) for free. Supports metric and imperial units.',
     url: '/bmi-calculator',
-    siteName: 'Handy Helper Tools',
+    siteName: 'Fruupy',
     images: [
       {
         url: '/og-image.jpg',
@@ -24,7 +24,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BMI Calculator - Free Body Mass Index Calculator | Handy Helper',
+    title: 'BMI Calculator - Free Body Mass Index Calculator | Fruupy',
     description: 'Calculate your Body Mass Index (BMI) for free. Supports metric and imperial units.',
     images: ['/og-image.jpg'],
   },
