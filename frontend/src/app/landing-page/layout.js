@@ -21,6 +21,10 @@ export const metadata = {
     description: 'Free calculators and tools: BMI, EMI, age, percentage, QR generator, language translator, and 30+ more utility tools.',
     images: ['/og-image.jpg'],
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function LandingPageLayout({ children }) {

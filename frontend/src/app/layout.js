@@ -68,9 +68,9 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+    yandex: process.env.NEXT_PUBLIC_YANDEX_SITE_VERIFICATION || undefined,
+    yahoo: process.env.NEXT_PUBLIC_YAHOO_SITE_VERIFICATION || undefined,
   },
   category: 'technology',
   classification: 'utility tools',
@@ -125,11 +125,6 @@ export default function RootLayout({ children }) {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "1250"
     },
     "featureList": [
       "BMI Calculator",

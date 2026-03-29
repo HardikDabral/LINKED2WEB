@@ -8,10 +8,16 @@ export default function sitemap() {
   // Main pages - highest priority
   const mainPages = [
     { route: '', priority: 1.0, changeFrequency: 'daily' },
-    { route: '/landing-page', priority: 1.0, changeFrequency: 'daily' },
     { route: '/about', priority: 0.9, changeFrequency: 'monthly' },
+    { route: '/blog', priority: 0.85, changeFrequency: 'weekly' },
     { route: '/terms', priority: 0.7, changeFrequency: 'monthly' },
     { route: '/privacy', priority: 0.7, changeFrequency: 'monthly' },
+  ]
+
+  const blogPostPages = [
+    { route: '/blog/keyword-research-kaise-kare', priority: 0.75, changeFrequency: 'monthly' },
+    { route: '/blog/seo-friendly-article-kaise-likhe', priority: 0.75, changeFrequency: 'monthly' },
+    { route: '/blog/free-online-tools-se-paise-kaise-kamaye', priority: 0.75, changeFrequency: 'monthly' },
   ]
 
   // Calculator pages - high priority
@@ -67,7 +73,6 @@ export default function sitemap() {
     { route: '/decision-maker', priority: 0.7, changeFrequency: 'weekly' },
     { route: '/random-name-picker', priority: 0.7, changeFrequency: 'weekly' },
     { route: '/wifi-speed-test', priority: 0.7, changeFrequency: 'weekly' },
-    { route: '/login', priority: 0.5, changeFrequency: 'monthly' },
   ]
 
   const allPages = [
@@ -77,6 +82,7 @@ export default function sitemap() {
     ...dateTimePages,
     ...productivityPages,
     ...healthPages,
+    ...blogPostPages,
     ...otherPages,
   ]
 

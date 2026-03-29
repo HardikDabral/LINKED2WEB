@@ -1,150 +1,147 @@
 "use client";
 
-import { ChevronRight } from "lucide-react";
-
 export default function WhyUs() {
-  const widgets = [
-    {
-      header: "CHAT WIDGET",
-      title: "AI-powered conversations",
-      status: "Live",
-      description: "Context-aware answers with quick actions, tone control, and guardrails.",
-      features: ["Smart suggestions", "Safety + escalation", "No login required"],
-      footer: "Async · SEO-safe",
-      link: "Learn more",
-      accent: "purple",
-    },
-    {
-      header: "SEARCH WIDGET",
-      title: "Semantic search",
-      status: "Live",
-      description: "Website-scoped vector search with fast results, filters, and recency bias.",
-      features: ["Filters + facets", "URL-aware ranking", "Structured snippets"],
-      footer: "Async · SEO-safe",
-      link: "Learn more",
-      accent: "blue",
-    },
-  ];
-
   return (
-    <section
-      className="relative w-full bg-black overflow-hidden"
-      style={{
-        backgroundImage: `
-          linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px)
-        `,
-        backgroundSize: '32px 32px',
-      }}
-    >
-      {/* Grayish Gradient Shade - Right Side Centered */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 h-[600px] w-[400px] rounded-full pointer-events-none blur-3xl"
+    <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#F8FBFC] to-white">
+      <div
+        className="pointer-events-none absolute right-0 top-1/2 z-0 h-[600px] w-[400px] -translate-y-1/2 rounded-full blur-3xl"
+        aria-hidden
         style={{
-          background: 'radial-gradient(ellipse at right center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.01) 50%, transparent 70%)'
+          background:
+            "radial-gradient(ellipse at right center, rgba(184, 227, 233, 0.55) 0%, rgba(79, 124, 130, 0.12) 40%, transparent 70%)",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0 z-[1]"
+        aria-hidden
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(11, 46, 51, 0.09) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(11, 46, 51, 0.09) 1px, transparent 1px)
+          `,
+          backgroundSize: "32px 32px",
         }}
       />
 
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-12">
-        {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 gap-8">
+        <div className="mb-12 flex flex-col items-start justify-between gap-8 md:mb-20 md:flex-row md:items-end">
           <div className="max-w-xl">
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white uppercase tracking-tighter mb-4">
-              OUR APPROACH
+            <h2 className="mb-4 text-4xl font-bold uppercase tracking-tighter text-[#0B2E33] md:text-5xl lg:text-7xl">
+              Why Fruupy
             </h2>
-            <div className="h-16 w-full md:w-[300px] rounded-full bg-gradient-to-r from-zinc-800 to-zinc-900 border border-white/5 overflow-hidden relative">
-              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 translate-x-[-100%] animate-shine" />
+            <p className="mb-3 text-sm font-medium text-[#4F7C82]">fruupy.com · free Fruupy tools</p>
+            <div className="relative h-16 w-full overflow-hidden rounded-full border border-[#93B1B5]/40 bg-gradient-to-r from-[#B8E3E9]/30 via-white to-[#B8E3E9]/20 md:w-[300px]">
+              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
             </div>
           </div>
-          <div className="text-right">
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white uppercase tracking-tighter">
-              ENSURES
-            </h2>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white uppercase tracking-tighter">
-              {'{RESULTS}'}
-            </h2>
+          <div className="text-left md:text-right">
+            <h2 className="text-4xl font-bold uppercase tracking-tighter text-[#0B2E33] md:text-5xl lg:text-7xl">Fruupy built</h2>
+            <h2 className="text-4xl font-bold uppercase tracking-tighter text-[#4F7C82] md:text-5xl lg:text-7xl">for you</h2>
           </div>
         </div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 h-auto md:h-[600px]">
-
-          {/* Card 1: Analysis (Vertical Left) */}
-          <div className="md:row-span-2 rounded-[2rem] border border-white/10 bg-[#0A0A0A] p-8 flex flex-col justify-between group hover:border-white/20 transition-all duration-500">
+        <div className="grid h-auto grid-cols-1 gap-4 md:h-[600px] md:grid-cols-4">
+          <div className="group flex flex-col justify-between rounded-[2rem] border border-[#93B1B5]/40 bg-white p-8 shadow-sm transition-all duration-500 hover:border-[#4F7C82]/45 md:row-span-2">
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">Detailed Trend Analysis</h3>
-              <p className="text-sm text-gray-200 leading-relaxed">
-                We dive deep into your business goals and market trends. Analyzing the best marketing practices in your niche to propose viral concepts based on data.
+              <h3 className="mb-4 text-xl font-bold text-[#0B2E33]">Fast & accurate</h3>
+              <p className="text-sm leading-relaxed text-[#0B2E33]/70">
+                <strong className="text-[#0B2E33]">Fruupy</strong> tools on <span className="font-medium text-[#4F7C82]">fruupy.com</span> are tuned for quick answers — EMI, BMI, countdowns, GST splits, word counts, and more without clutter.
+                Inputs stay obvious, outputs stay copy-friendly, and Fruupy avoids dark patterns that trick you into signing up
+                for something you never needed.
               </p>
             </div>
             <div className="mt-8 flex justify-end">
-              <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-colors duration-300">
-                <div className="w-2 h-2 rounded-full bg-white group-hover:bg-black transition-colors duration-300"></div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#93B1B5]/40 transition-colors duration-300 group-hover:border-[#4F7C82] group-hover:bg-[#F8FBFC]">
+                <div className="h-2 w-2 rounded-full bg-[#4F7C82]" />
               </div>
             </div>
           </div>
 
-          {/* Card 2: Filming / Dev (Top Middle Left) */}
-          <div className="rounded-[2rem] border border-white/10 bg-[#0A0A0A] p-8 flex flex-col justify-between group hover:border-white/20 transition-all duration-500">
-            <h3 className="text-xl font-bold text-white mb-2">Development</h3>
-            <p className="text-xs text-gray-300">
-              We build scalable, clean code using modern frameworks to ensure longevity.
+          <div className="rounded-[2rem] border border-[#93B1B5]/40 bg-[#F8FBFC] p-8 shadow-sm transition-all duration-500 hover:border-[#4F7C82]/45">
+            <h3 className="mb-2 text-xl font-bold text-[#0B2E33]">No login</h3>
+            <p className="text-xs leading-relaxed text-[#0B2E33]/65">
+              Open Fruupy at fruupy.com and go — low friction, high speed. Your history stays in the browser unless you choose to
+              share it; Fruupy does not force social login for a basic calculator.
             </p>
           </div>
 
-          {/* Card 3: Audience (Top Middle Right) */}
-          <div className="rounded-[2rem] border border-white/10 bg-[#0A0A0A] p-8 flex flex-col justify-between group hover:border-white/20 transition-all duration-500">
-            <h3 className="text-xl font-bold text-white mb-2">User Research</h3>
-            <p className="text-xs text-gray-300">
-              Compiling a full portrait of your target audience to maximize engagement.
+          <div className="rounded-[2rem] border border-[#93B1B5]/40 bg-[#F8FBFC] p-8 shadow-sm transition-all duration-500 hover:border-[#4F7C82]/45">
+            <h3 className="mb-2 text-xl font-bold text-[#0B2E33]">Always free</h3>
+            <p className="text-xs leading-relaxed text-[#0B2E33]/65">
+              Fruupy core calculators stay free on fruupy.com — that is the whole point of Fruupy. Premium features may arrive
+              someday, but the everyday Fruupy tools millions rely on will remain accessible without a paywall.
             </p>
           </div>
 
-          {/* Card 4: Strategy (Vertical Right) */}
-          <div className="md:row-span-2 rounded-[2rem] border border-white/10 bg-[#0A0A0A] p-8 flex flex-col justify-between group hover:border-white/20 transition-all duration-500">
+          <div className="group flex flex-col justify-between rounded-[2rem] border border-[#93B1B5]/40 bg-white p-8 shadow-sm transition-all duration-500 hover:border-[#4F7C82]/45 md:row-span-2">
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">Content Strategy</h3>
-              <p className="text-sm text-gray-200 leading-relaxed">
-                We write compelling scripts and layouts that capture attention from the first second and spark interest in your niche.
+              <h3 className="mb-4 text-xl font-bold text-[#0B2E33]">Growing library</h3>
+              <p className="text-sm leading-relaxed text-[#0B2E33]/70">
+                Fruupy adds new utilities on fruupy.com regularly — converters, mini games, marketing helpers, and student
+                shortcuts. Tell Explore with Ramesh what Fruupy should build next; the best Fruupy ideas come from real users
+                stuck repeating the same spreadsheet steps.
               </p>
             </div>
             <div className="mt-8 flex justify-end">
-              <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-colors duration-300">
-                <div className="w-2 h-2 rounded-full bg-white group-hover:bg-black transition-colors duration-300"></div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#93B1B5]/40 transition-colors group-hover:border-[#4F7C82] group-hover:bg-[#F8FBFC]">
+                <div className="h-2 w-2 rounded-full bg-[#4F7C82]" />
               </div>
             </div>
           </div>
 
-          {/* Card 5: Editing (Wide Middle) */}
-          <div className="md:col-span-2 rounded-[2rem] border border-white/10 bg-[#0A0A0A] p-8 flex items-center justify-between group hover:border-white/20 transition-all duration-500">
+          <div className="flex items-center justify-between rounded-[2rem] border border-[#93B1B5]/40 bg-white p-8 shadow-sm transition-all duration-500 hover:border-[#4F7C82]/45 md:col-span-2">
             <div className="flex-1 pr-4">
-              <h3 className="text-xl font-bold text-white mb-1">Pixel-Perfect Design</h3>
+              <h3 className="mb-1 text-xl font-bold text-[#0B2E33]">Clean interface</h3>
             </div>
-            <div className="flex-1 border-l border-white/10 pl-6">
-              <p className="text-xs text-gray-300">
-                Creating dynamic visual hierarchies that reveal your brand's identity clearly.
+            <div className="flex-1 border-l border-[#93B1B5]/35 pl-6">
+              <p className="text-xs leading-relaxed text-[#0B2E33]/65 md:text-sm">
+                Same Fruupy teal palette across fruupy.com so every Fruupy page feels familiar. Typography, spacing, and button
+                styles repeat intentionally — you should recognize Fruupy instantly whether you landed on a finance tool or a
+                productivity timer.
               </p>
             </div>
           </div>
 
-          {/* Card 6: Promotion (Wide Bottom) */}
-          <div className="md:col-span-3 rounded-[2rem] border border-white/10 bg-[#0A0A0A] p-8 flex flex-col md:flex-row items-center justify-between group hover:border-white/20 transition-all duration-500">
-            <h3 className="text-xl font-bold text-white mb-2 md:mb-0 md:w-1/3">SEO & Promotion</h3>
-            <p className="text-sm text-gray-200 md:w-2/3 md:border-l md:border-white/10 md:pl-8">
-              We optimize every aspect of your site to ensure it ranks high and stays relevant, driving consistent traffic for the long term.
+          <div className="flex flex-col items-center justify-between rounded-[2rem] border border-[#93B1B5]/40 bg-[#F8FBFC] p-8 shadow-sm transition-all duration-500 hover:border-[#4F7C82]/45 md:col-span-3 md:flex-row">
+            <h3 className="mb-2 text-xl font-bold text-[#0B2E33] md:mb-0 md:w-1/3">Explore with Ramesh</h3>
+            <p className="text-sm leading-relaxed text-[#0B2E33]/70 md:w-2/3 md:border-l md:border-[#93B1B5]/35 md:pl-8">
+              <strong className="text-[#0B2E33]">Fruupy</strong> at <span className="font-medium text-[#4F7C82]">fruupy.com</span> is for people who want dependable tools without noise — students balancing exams, creators shipping content, shop owners
+              estimating margins, and parents planning budgets. When you trust Fruupy with a quick calculation, you are trusting a
+              brand that publishes policies, listens to email, and iterates in public.
             </p>
           </div>
 
-          {/* Card 7: CTA (Bottom Right) */}
-          <div className="rounded-[2rem] bg-white p-8 flex items-center justify-center hover:scale-[1.02] transition-transform cursor-pointer relative overflow-hidden group">
-            <div className="absolute inset-0 bg-gradient-to-tr from-zinc-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <a
+            href="/about"
+            className="flex cursor-pointer items-center justify-center overflow-hidden rounded-[2rem] bg-[#0B2E33] p-8 text-center transition-transform hover:scale-[1.02]"
+          >
             <div className="relative z-10 flex items-center gap-2">
-              <span className="text-sm font-bold text-black uppercase tracking-wider">Discuss Project</span>
-              <svg className="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+              <span className="text-sm font-bold uppercase tracking-wider text-white">About Fruupy · fruupy.com</span>
+              <svg className="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </div>
-          </div>
-
+          </a>
         </div>
+
+        <article className="mx-auto mt-16 max-w-4xl rounded-[2rem] border border-[#93B1B5]/40 bg-white p-8 shadow-sm md:mt-20 md:p-12">
+          <h2 className="mb-4 text-xl font-bold text-[#0B2E33] md:text-2xl">
+            Fruupy mission &amp; how <span className="text-[#4F7C82]">fruupy.com</span> helps you daily
+          </h2>
+          <div className="space-y-4 text-sm leading-relaxed text-[#0B2E33]/75 md:text-[15px]">
+            <p>
+              Fruupy exists so the internet still has a calm corner for honest math and small utilities. Instead of downloading
+              questionable executables or signing into five dashboards, you open Fruupy, solve the task, and leave. That
+              workflow matters for schools with shared Chromebooks, offices that block installs, and travelers on hotel Wi‑Fi
+              who just need a working Fruupy EMI estimate before talking to a bank.
+            </p>
+            <p>
+              Long term, Fruupy wants to be the name people associate with &quot;free online calculators that actually
+              work.&quot; Explore with Ramesh invests in performance, copy clarity, and search-friendly structure so Fruupy
+              pages are easy for humans and search engines to understand — without stuffing keywords where they do not belong.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
   );

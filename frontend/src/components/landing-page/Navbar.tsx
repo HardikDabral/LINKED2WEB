@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { Menu, Sun, Moon } from "lucide-react";
+import { Menu } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 // import { useThemeStore } from "@/lib/store/useThemeStore";
 // import { PopupForm } from "@/components/sections/Popupform"
@@ -17,13 +15,10 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [showContent, setShowContent] = useState(false);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
   // const { theme, toggleTheme } = useThemeStore();
-  const [isDark, setIsDark] = useState(false);
   const { scrollY } = useScroll();
   const navTop = useTransform(scrollY, [0, 100], ["2.5rem", "1rem"]);
 
@@ -49,9 +44,8 @@ export default function Navbar() {
   // }, [theme]);
 
   useEffect(() => {
-    // Apply theme on mount
     if (typeof window !== "undefined") {
-      const savedTheme = localStorage.getItem("theme") || "dark";
+      const savedTheme = localStorage.getItem("theme") || "light";
       document.documentElement.classList.toggle("dark", savedTheme === "dark");
     }
   }, []);
@@ -76,15 +70,12 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
+        aria-label="Fruupy navigation — fruupy.com"
         style={{ top: navTop }}
         className="fixed left-1/2 -translate-x-1/2 z-50 w-full max-w-[96%] sm:max-w-[93%] md:max-w-[90%] lg:max-w-[88%] xl:max-w-[1200px] 2xl:max-w-[1300px] px-4 sm:px-6 flex justify-center sm:!top-10"
       >
         <motion.div
-          className="relative flex items-center justify-center lg:justify-between h-16 py-3 pl-4 sm:pl-6 md:pl-8 pr-2 sm:pr-3 rounded-full backdrop-blur-2xl border border-white/20 dark:border-white/20 shadow-xl overflow-hidden"
-          style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-            borderColor: 'rgba(255, 255, 255, 0.1)',
-          }}
+          className="relative flex items-center justify-center lg:justify-between h-16 py-3 pl-4 sm:pl-6 md:pl-8 pr-2 sm:pr-3 rounded-full border border-[#93B1B5]/40 bg-white/90 backdrop-blur-xl shadow-lg shadow-[#0B2E33]/5 overflow-hidden"
           initial={{ width: "300px", marginLeft: "auto", marginRight: "auto" }}
           animate={{
             width: isExpanded ? "100%" : "300px",
@@ -99,9 +90,9 @@ export default function Navbar() {
         >
           {/* Mobile: Logo on Left */}
           <div className="xl:hidden">
-            <Link href="/" className="flex items-center">
-              {/* Fallback to text if image not present, or use placeholder logic */}
-              <span className="text-xl font-bold text-white">Fruupy</span>
+            <Link href="/" className="flex flex-col items-start gap-0">
+              <span className="text-xl font-bold text-[#0B2E33]">Fruupy</span>
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-[#4F7C82]">fruupy.com</span>
               {/* <Image
                 src="/images/talents/logowhite.png"
                 alt="ZodAi Logo"
@@ -114,8 +105,9 @@ export default function Navbar() {
 
           {/* Desktop: Center - Brand Name (always centered) */}
           <div className="hidden xl:block absolute left-1/2 -translate-x-1/2">
-            <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-white tracking-tight">Fruupy</span>
+            <Link href="/" className="flex flex-col items-center gap-0">
+              <span className="text-2xl font-bold text-[#0B2E33] tracking-tight">Fruupy</span>
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-[#4F7C82]">fruupy.com</span>
               {/* <Image
                 src="/images/talents/logowhite.png"
                 alt="ZodAi Logo"
@@ -145,7 +137,7 @@ export default function Navbar() {
                   >
                     <Link
                       href={item.href}
-                      className="text-sm sm:text-[15px] text-white font-medium transition-opacity hover:opacity-80 whitespace-nowrap"
+                      className="text-sm sm:text-[15px] text-[#0B2E33]/80 font-medium transition-colors hover:text-[#0B2E33] whitespace-nowrap"
                     >
                       {item.label}
                     </Link>
@@ -202,7 +194,7 @@ export default function Navbar() {
             </motion.button> */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white p-2"
+              className="text-[#0B2E33] p-2"
               aria-label="Toggle menu"
             >
               <Menu size={24} />
@@ -216,28 +208,25 @@ export default function Navbar() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/50 z-40 xl:hidden"
+            className="fixed inset-0 bg-[#0B2E33]/20 z-40 xl:hidden backdrop-blur-sm"
             onClick={() => setIsMobileMenuOpen(false)}
           />
 
           {/* Sidebar */}
           <div
-            className="fixed top-0 right-0 h-full w-[320px] z-50 xl:hidden shadow-2xl transition-transform duration-300 ease-out"
-            style={{
-              transform: 'translateX(0)',
-              backgroundColor: isDark ? '#1A1A1A' : '#FFFFFF',
-            }}
+            className="fixed top-0 right-0 h-full w-[320px] z-50 xl:hidden shadow-2xl border-l border-[#93B1B5]/40 bg-[#F8FBFC] transition-transform duration-300 ease-out"
+            style={{ transform: 'translateX(0)' }}
           >
             <div className="flex flex-col h-full p-6">
               {/* Header with Brand and Close Button */}
               <div className="flex justify-between items-center mb-8">
-                <span className={`text-2xl font-bold ${isDark ? 'text-white' : 'text-black'}`}>
-                  Fruupy
-                </span>
+                <div>
+                  <span className="block text-2xl font-bold text-[#0B2E33]">Fruupy</span>
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-[#4F7C82]">fruupy.com</span>
+                </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`p-2 rounded-full transition-colors ${isDark ? 'hover:bg-white/10 text-white' : 'hover:bg-black/5 text-black'
-                    }`}
+                  className="p-2 rounded-full transition-colors hover:bg-[#0B2E33]/5 text-[#0B2E33]"
                   aria-label="Close menu"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -253,8 +242,7 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-lg font-medium hover:text-zinc-400 transition-colors ${isDark ? 'text-white' : 'text-black'
-                      }`}
+                    className="text-lg font-medium text-[#0B2E33] hover:text-[#4F7C82] transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -268,9 +256,9 @@ export default function Navbar() {
                   //   setIsMobileMenuOpen(false);
                   //   setTimeout(() => setIsPopupOpen(true), 100);
                   // }}
-                  className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-white text-black text-base font-semibold transition-all duration-300 shadow-lg hover:bg-zinc-200"
+                  className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-[#0B2E33] text-white text-base font-semibold transition-all duration-300 shadow-lg hover:bg-[#0B2E33]/90"
                 >
-                  Start Now
+                  Browse tools
                 </button>
               </div>
             </div>

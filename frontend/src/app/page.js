@@ -241,7 +241,7 @@ export default function Home() {
   )
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       {/* Schema Markup for SEO */}
       <script
         type="application/ld+json"
@@ -261,7 +261,7 @@ export default function Home() {
       />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 px-4 overflow-hidden bg-gradient-to-b from-white to-[#F8FBFC]">
+      <section className="relative pt-16 pb-16 md:pt-24 md:pb-24 px-4 overflow-hidden bg-gradient-to-b from-white to-[#F8FBFC]">
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B2E33]/5 border border-[#0B2E33]/10 text-[#0B2E33] text-xs font-semibold mb-6 animate-fade-in">
             <TrendingUp size={14} />
@@ -306,7 +306,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-[#0B2E33] mb-2">Our Popular Tools</h2>
             <p className="text-[#0B2E33]/60">Most used utilities by our community this week.</p>
           </div>
-          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide no-scrollbar">
+          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide no-scrollbar max-w-full">
             {['All', ...categories].map((cat) => (
               <button
                 key={cat}
@@ -347,57 +347,6 @@ export default function Home() {
             <button onClick={() => setSearchQuery('')} className="text-[#0B2E33] font-bold underline">Clear search</button>
           </div>
         )}
-      </section>
-
-      {/* SEO Content Section */}
-      <section className="py-20 bg-[#0B2E33] text-white overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl md:text-5xl font-black mb-8 leading-tight">
-                Why Thousands Choose <span className="text-[#B8E3E9]">Fruupy</span> for Daily Tasks
-              </h2>
-              <div className="space-y-6">
-                {[
-                  { title: "100% Free Forever", desc: "No hidden charges, no premium tiers. All tools are free for everyone to use at any time." },
-                  { title: "Privacy Focused", desc: "We don't store your personal data or calculations. Your privacy is our top priority." },
-                  { title: "Fast & Accurate", desc: "Optimized for speed and built with precision to give you the results you can trust." },
-                  { title: "No Registration", desc: "Start using any tool instantly without the hassle of creating an account or logging in." }
-                ].map((item, idx) => (
-                  <div key={idx} className="flex gap-4">
-                    <div className="mt-1 flex-shrink-0">
-                      <CheckCircle2 className="text-[#B8E3E9]" size={20} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-1">{item.title}</h4>
-                      <p className="text-white/70 text-sm leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-3xl rounded-3xl p-8 border border-white/10 shadow-3xl">
-                <h3 className="text-2xl font-bold mb-6 italic underline decoration-[#B8E3E9]">Expert SEO & Marketing Tips by Ramesh</h3>
-                <div className="space-y-6">
-                  <p className="text-lg leading-relaxed text-white/90">
-                    "Success in the digital world starts with the right tools. At <strong>Fruupy</strong>, we aim to bridge the gap between complex tasks and simple solutions. Whether you're optimizing content with our <strong>Word Counter</strong> or planning your finances, the goal is always speed and accuracy."
-                  </p>
-                  <p className="text-white/70">
-                    Our platform is constantly updated with new tools based on user feedback. We specialize in <strong>SEO tools</strong>, <strong>financial calculators</strong>, and <strong>web developer utilities</strong> that save you time daily.
-                  </p>
-                  <div className="pt-6 border-t border-white/10 flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#B8E3E9] to-[#4F7C82]"></div>
-                    <div>
-                      <p className="font-bold">Ramesh Chandra</p>
-                      <p className="text-xs text-white/50 underline">Founder, Explore with Ramesh</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Final CTA */}
