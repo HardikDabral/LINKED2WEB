@@ -6,7 +6,7 @@ import Sidebar from './Sidebar'
 
 export default function ClientLayout({ children }) {
   const pathname = usePathname()
-  const isLandingPage = pathname === '/landing-page'
+  const isLandingPage = pathname === '/'
 
   return (
     <AuthProvider>
@@ -14,8 +14,8 @@ export default function ClientLayout({ children }) {
         {!isLandingPage && <Navbar />}
         <div className={`flex ${!isLandingPage ? 'pt-16' : ''}`}>
           {!isLandingPage && <Sidebar />}
-          <div className={`flex-1 ${!isLandingPage ? 'md:ml-64' : ''}`}> 
-            <div className="w-full"> 
+          <div className={`flex-1 min-w-0 ${!isLandingPage ? 'md:ml-64' : ''}`}>
+            <div className="w-full overflow-x-hidden">
               {children}
             </div>
           </div>

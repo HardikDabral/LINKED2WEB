@@ -9,7 +9,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/", label: "Tools" },
+  { href: "/tools", label: "Tools" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ];
@@ -251,15 +251,13 @@ export default function Navbar() {
 
               {/* Action Button */}
               <div className="mt-auto">
-                <button
-                  // onClick={() => {
-                  //   setIsMobileMenuOpen(false);
-                  //   setTimeout(() => setIsPopupOpen(true), 100);
-                  // }}
+                <Link
+                  href="/tools"
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-[#0B2E33] text-white text-base font-semibold transition-all duration-300 shadow-lg hover:bg-[#0B2E33]/90"
                 >
                   Browse tools
-                </button>
+                </Link>
               </div>
             </div>
           </div>

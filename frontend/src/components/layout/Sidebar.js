@@ -63,7 +63,7 @@ export default function Sidebar() {
                 {tools.map(tool => (
                   <li key={tool.id}>
                     <Link
-                      href={`/${tool.id}`}
+                      href={`/tools/${tool.id}`}
                       className="flex items-center px-3 py-2.5 rounded-lg hover:bg-[#B8E3E9]/20 group transition-all duration-300"
                     >
                       <tool.icon className="w-5 h-5 mr-3 text-[#0B2E33]/60 group-hover:text-[#0B2E33] transition-colors" />

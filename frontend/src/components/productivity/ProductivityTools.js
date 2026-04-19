@@ -47,7 +47,7 @@ export default function ProductivityTools() {
         {tools.map((tool) => (
           <Link
             key={tool.id}
-            href={`/${tool.id}`}
+            href={`/tools/${tool.id}`}
             className="p-4 border rounded-lg hover:shadow-lg transition-shadow duration-200 bg-white dark:bg-gray-800"
           >
             <div className="flex items-center space-x-3">

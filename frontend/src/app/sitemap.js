@@ -3,76 +3,75 @@ export default function sitemap() {
     ? 'https://www.fruupy.com'
     : 'http://localhost:3000'
 
-  const now = new Date()
-
   // Main pages - highest priority
   const mainPages = [
-    { route: '', priority: 1.0, changeFrequency: 'daily' },
-    { route: '/about', priority: 0.9, changeFrequency: 'monthly' },
-    { route: '/blog', priority: 0.85, changeFrequency: 'weekly' },
-    { route: '/terms', priority: 0.7, changeFrequency: 'monthly' },
-    { route: '/privacy', priority: 0.7, changeFrequency: 'monthly' },
+    { route: '', priority: 1.0, changeFrequency: 'daily', lastModified: '2026-03-15' },
+    { route: '/tools', priority: 0.95, changeFrequency: 'daily', lastModified: '2026-03-15' },
+    { route: '/about', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/blog', priority: 0.85, changeFrequency: 'weekly', lastModified: '2026-03-04' },
+    { route: '/terms', priority: 0.7, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/privacy', priority: 0.7, changeFrequency: 'monthly', lastModified: '2026-03-15' },
   ]
 
   const blogPostPages = [
-    { route: '/blog/keyword-research-kaise-kare', priority: 0.75, changeFrequency: 'monthly' },
-    { route: '/blog/seo-friendly-article-kaise-likhe', priority: 0.75, changeFrequency: 'monthly' },
-    { route: '/blog/free-online-tools-se-paise-kaise-kamaye', priority: 0.75, changeFrequency: 'monthly' },
+    { route: '/blog/keyword-research-kaise-kare', priority: 0.75, changeFrequency: 'monthly', lastModified: '2026-03-04' },
+    { route: '/blog/seo-friendly-article-kaise-likhe', priority: 0.75, changeFrequency: 'monthly', lastModified: '2026-03-02' },
+    { route: '/blog/free-online-tools-se-paise-kaise-kamaye', priority: 0.75, changeFrequency: 'monthly', lastModified: '2026-02-28' },
   ]
 
   // Calculator pages - high priority
   const calculatorPages = [
-    { route: '/bmi-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/emi-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/age-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/percentage-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/calorie-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/gpa-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/gst-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/interest-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/salary-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/tip-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/discount-calculator', priority: 0.9, changeFrequency: 'weekly' },
-    { route: '/expense-splitter', priority: 0.9, changeFrequency: 'weekly' },
+    { route: '/tools/bmi-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/emi-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/age-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/percentage-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/calorie-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/gpa-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/gst-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/interest-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/salary-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/tip-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/discount-calculator', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/expense-splitter', priority: 0.9, changeFrequency: 'monthly', lastModified: '2026-03-15' },
   ]
 
   // Utility tool pages - medium-high priority
   const utilityPages = [
-    { route: '/qr-generator', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/language-translator', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/word-counter', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/json-formatter', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/base64-tool', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/color-picker', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/image-resizer', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/meme-generator', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/math-solver', priority: 0.8, changeFrequency: 'weekly' },
+    { route: '/tools/qr-generator', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/language-translator', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/word-counter', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/json-formatter', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/base64-tool', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/color-picker', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/image-resizer', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/meme-generator', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/math-solver', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
   ]
 
   // Date & Time tools
   const dateTimePages = [
-    { route: '/day-counter', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/countdown-timer', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/stopwatch', priority: 0.8, changeFrequency: 'weekly' },
+    { route: '/tools/day-counter', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/countdown-timer', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/stopwatch', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
   ]
 
   // Productivity tools
   const productivityPages = [
-    { route: '/todo-list', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/pomodoro', priority: 0.8, changeFrequency: 'weekly' },
+    { route: '/tools/todo-list', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/pomodoro', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
   ]
 
   // Health tools
   const healthPages = [
-    { route: '/water-intake-calculator', priority: 0.8, changeFrequency: 'weekly' },
-    { route: '/sleep-calculator', priority: 0.8, changeFrequency: 'weekly' },
+    { route: '/tools/water-intake-calculator', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/sleep-calculator', priority: 0.8, changeFrequency: 'monthly', lastModified: '2026-03-15' },
   ]
 
   // Other tools
   const otherPages = [
-    { route: '/decision-maker', priority: 0.7, changeFrequency: 'weekly' },
-    { route: '/random-name-picker', priority: 0.7, changeFrequency: 'weekly' },
-    { route: '/wifi-speed-test', priority: 0.7, changeFrequency: 'weekly' },
+    { route: '/tools/decision-maker', priority: 0.7, changeFrequency: 'monthly', lastModified: '2026-03-15' },
+    { route: '/tools/random-name-picker', priority: 0.7, changeFrequency: 'monthly', lastModified: '2026-03-01' },
+    { route: '/tools/wifi-speed-test', priority: 0.7, changeFrequency: 'monthly', lastModified: '2026-03-15' },
   ]
 
   const allPages = [
@@ -86,9 +85,9 @@ export default function sitemap() {
     ...otherPages,
   ]
 
-  return allPages.map(({ route, priority, changeFrequency }) => ({
+  return allPages.map(({ route, priority, changeFrequency, lastModified }) => ({
     url: `${baseUrl}${route}`,
-    lastModified: now,
+    lastModified,
     changeFrequency,
     priority,
   }))

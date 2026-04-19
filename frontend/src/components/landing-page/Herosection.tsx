@@ -107,14 +107,14 @@ export default function Herosection() {
                 className="mb-10 flex w-full flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start"
               >
                 <Link
-                  href="/"
+                  href="/tools"
                   className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-[#0B2E33] to-[#1a4a52] px-8 py-3.5 text-center text-sm font-bold text-white shadow-[0_20px_40px_-12px_rgba(11,46,51,0.55)] transition-transform duration-300 hover:scale-[1.02] hover:shadow-[0_24px_48px_-12px_rgba(11,46,51,0.65)] sm:w-auto sm:py-4 sm:text-base"
                 >
                   <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
                   <span className="relative">Browse Fruupy tools</span>
                 </Link>
                 <Link
-                  href="/"
+                  href="/tools"
                   className="w-full rounded-full border border-[#93B1B5]/50 bg-white/70 px-8 py-3.5 text-center text-sm font-semibold text-[#0B2E33] shadow-sm backdrop-blur-md transition-all duration-300 hover:border-[#4F7C82]/45 hover:bg-white sm:w-auto sm:py-4 sm:text-base"
                 >
                   All tools on Fruupy

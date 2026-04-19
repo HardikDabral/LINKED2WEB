@@ -85,7 +85,7 @@ export default function Pricing() {
               </div>
 
               <Link
-                href="/"
+                href="/tools"
                 className={`mt-12 block w-full border py-3 text-center text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
                   plan.featured
                     ? "border-[#0B2E33] bg-[#0B2E33] text-white hover:bg-[#0B2E33]/90"

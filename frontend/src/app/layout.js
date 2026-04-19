@@ -29,9 +29,6 @@ export const metadata = {
     telephone: false,
   },
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.fruupy.com' : 'http://localhost:3000'),
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

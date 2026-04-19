@@ -4,13 +4,13 @@ import Link from "next/link";
 import { ArrowUpRight, Github, Twitter, Instagram } from "lucide-react";
 
 const tools = [
-  { name: "BMI Calculator", href: "/bmi-calculator" },
-  { name: "EMI Calculator", href: "/emi-calculator" },
-  { name: "Age Calculator", href: "/age-calculator" },
-  { name: "Percentage Calculator", href: "/percentage-calculator" },
-  { name: "GPA Calculator", href: "/gpa-calculator" },
-  { name: "QR Generator", href: "/qr-generator" },
-  { name: "Word Counter", href: "/word-counter" },
+  { name: "BMI Calculator", href: "/tools/bmi-calculator" },
+  { name: "EMI Calculator", href: "/tools/emi-calculator" },
+  { name: "Age Calculator", href: "/tools/age-calculator" },
+  { name: "Percentage Calculator", href: "/tools/percentage-calculator" },
+  { name: "GPA Calculator", href: "/tools/gpa-calculator" },
+  { name: "QR Generator", href: "/tools/qr-generator" },
+  { name: "Word Counter", href: "/tools/word-counter" },
 ];
 
 const resources = [

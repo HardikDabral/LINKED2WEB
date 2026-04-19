@@ -28,7 +28,7 @@ export default function NotFound() {
               Go to Homepage
             </Link>
             <Link
-              href="/landing-page"
+              href="/tools"
               className="inline-block bg-white/50 text-[#0B2E33] px-6 py-3 rounded-lg border border-[#93B1B5]/40 hover:bg-white/70 transition-all duration-300"
             >
               Browse Tools
